@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'roxborough';
+    src: url('fonts/roxborough.eot');
+    src: url('fonts/roxborough.eot?#iefix') format('embedded-opentype'),
+        url('fonts/roxborough.woff2') format('woff2'),
+        url('fonts/roxborough.woff') format('woff'),
+        url('fonts/roxborough.ttf') format('truetype'),
+        url('fonts/roxborough.svg#') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'roxborough', serif;
+}
