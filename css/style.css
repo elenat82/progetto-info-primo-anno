@@ -17,3 +17,16 @@ body {
 h1 {
     font-family: 'roxborough', serif;
 }
+
+.testo_footer{
+    display: inline-block;
+    text-align: center;
+    margin-left: 03%;
+}
+.icons{
+    margin-left: 20vh;
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+}
+
