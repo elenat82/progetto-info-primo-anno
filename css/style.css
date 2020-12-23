@@ -30,3 +30,7 @@ h1 {
     margin-right: 100px;
 }
 
+hr{
+    width: 70%;
+    margin: 30px auto;
+}
