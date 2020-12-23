@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tali e Quadri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div id="logo">
-            <a href="index.html" title="Home">
-                <svg xmlns="http://www.w3.org/2000/svg" width="246" height="246" viewBox="0 0 246 246">
-                    <rect x="43" y="3" rx="0" ry="0" width="200" height="200" stroke-width="3" stroke="#000000"
-                        fill="none" />
-                    <rect x="23" y="23" rx="0" ry="0" width="200" height="200" stroke-width="3" stroke="#000000"
-                        fill="none" />
-                    <rect x="3" y="43" rx="0" ry="0" width="200" height="200" stroke-width="3" stroke="#000000"
-                        fill="none" />
-                </svg>
-            </a>
+        <div id="topbar">
+            <form action="#" method="get" id="cerca" role="search">
+                <input type="search" name="keyword" maxlength="50"
+                    aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
+                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button>icona lente</button>
+            </form>
+            <div id="logo">
+                <a href="index.html" title="Home">
+                    <img src="img/logo.svg" alt="Logo" width="100">
+                    <h2>PAINTED FOR PASSION</h2>
+                </a>
+            </div>
+            <ul id="user-menu">
+                <li><a href="account.html" title="Vai alla pagina Account">icona account Account</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello">icona carrello Carrello</a></li>
+            </ul>
         </div>
-        <h1>Tali e Quadri</h1>
-        <h2>PAINTED FOR PASSION</h2>
-        <h3>Negozio specializzato in riproduzioni d'autore</h3>
+        <nav role="navigation">
+            <ul>
+                <li><a href="home.html" title="Vai alla pagina Home">HOME</a></li>
+                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo">CHI SIAMO</a></li>
+                <li><a href="artisti.html" title="Vai alla pagina Artisti">ARTISTI</a></li>
+                <li><a href="contatti.html" title="Vai alla pagina Contatti">CONTATTI</a></li>
+                <li><a href="ricerca.html" title="Vai alla pagina Ricerca"></a>RICERCA</li>
+            </ul>
+        </nav>
     </header>
 
 </body>
