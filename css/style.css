@@ -14,8 +14,53 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'roxborough', serif;
+}
+
+header {
+    padding: 2rem;
+}
+
+#topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topbar > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33.33%;
+}
+
+#user-menu {
+    display: flex;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo h2 {
+    text-align: right;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 2rem;
 }
 
 .testo_footer{
@@ -29,8 +74,11 @@ h1 {
     float: right;
     margin-right: 100px;
 }
+<<<<<<< HEAD
 
 hr{
     width: 70%;
     margin: 30px auto;
 }
+=======
+>>>>>>> 05f9663016dd38b7d2cc0e3731e9ce87bdf58a86
