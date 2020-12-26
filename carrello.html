@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tali e Quadri</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <table id="carrello">
+            <thead>
+                <tr>
+                    <th>Prodotto</th>
+                    <th>Descrizione</th>
+                    <th>Prezzo unitario</th>
+                    <th>Quantità</th>
+                    <th>Totale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="prodotto-CM05">
+                    <td class="thumb"><img src="img/thumbs/Claude_Monet_Regate_ad_Argenteuil-thumb.jpg" alt="Claud Monet Regate ad Argenteuil"></td>
+                    <td>
+                        <h3>Claude Monet - Regate ad Argenteuil</h3>
+                        <p><span>SKU:</span><span>CM05</span></p>
+                    </td>
+                    <td class="price">
+                        <p class="originale scontato">980,00</p>
+                        <p class="finale">784,00</p>
+                    </td>
+                    <td><input type="number" name="quantita-CM05" id="quantita-CM05"><a href="#" title="Rimuovi prodotto">icona
+                            cestino</a></td>
+                    <td></td>
+                </tr>
+                <tr id="prodotto-PP01">
+                    <td class="thumb"><img src="img/thumbs/Pablo_Picasso_Guernica-thumb.jpg" alt="Pablo Picasso Guernica"></td>
+                    <td>
+                        <h3>Pablo Picasso - Guernica</h3>
+                        <p><span>SKU:</span><span>PP01</span></p>
+                    </td>
+                    <td>
+                        <p class="originale scontato">1240,00</p>
+                        <p class="finale">992,00</p>
+                    </td>
+                    <td><input type="number" name="quantita-PP01" id="quantita-PP01"><a href="#" title="Rimuovi prodotto">icona
+                            cestino</a></td>
+                    <td></td>
+                </tr>
+                <tr id="prodotto-PR04">
+                    <td class="thumb"><img src="img/thumbs/Pierre-Auguste_Renoir_Le_Bagnanti-thumb.jpg" alt="Pierre Auguste Renoir Le bagnanti"></td>
+                    <td>
+                        <h3>Pierre Auguste Renoir - Le bagnanti</h3>
+                        <p><span>SKU:</span><span>PR04</span></p>
+                    </td>
+                    <td>
+                        <p class="originale">850,00</p>
+                        <p class="finale"></p>
+                    </td>
+                    <td><input type="number" name="quantita-PR04" id="quantita-PR04"><a href="#" title="Rimuovi prodotto">icona
+                            cestino</a></td>
+                    <td></td>
+                </tr>
+                <tr id="prodotto-VK06">
+                    <td class="thumb"><img src="img/thumbs/Vassili_Kandinsky_Jaune_Rouge_Bleu-thumb.jpg" alt="Vassili Kandinski Giallo rosso e blu"></td>
+                    <td>
+                        <h3>Vassili Kandinski - Giallo rosso e blu</h3>
+                        <p><span>SKU:</span><span>VK06</span></p>
+                    </td>
+                    <td>
+                        <p class="originale scontato">930,00</p>
+                        <p class="finale">744,00</p>
+                    </td>
+                    <td><input type="number" name="quantita-VK06" id="quantita-VK06"><a href="#" title="Rimuovi prodotto">icona
+                            cestino</a></td>
+                    <td></td>
+                </tr>
+                <tr id="prodotto-VV09">
+                    <td class="thumb"><img src="img/thumbs/Vincent_Van_Gogh_Campo_di_grano-thumb.jpg" alt="Vincent Van Gogh Campo di Grano"></td>
+                    <td>
+                        <h3>Vincent Van Gogh - Campo di Grano</h3>
+                        <p><span>SKU:</span><span>VV09</span></p>
+                    </td>
+                    <td>
+                        <p class="originale">1460,00</p>
+                        <p class="finale"></p>
+                    </td>
+                    <td><input type="number" name="quantita-VV09" id="quantita-VV09"><a href="#" title="Rimuovi prodotto">icona
+                            cestino</a></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="text-right">Totale prodotti (iva incl.)</td>
+                    <td class="text-right">4830,00</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="text-right">Totale spedizione</td>
+                    <td class="text-right">80,00</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="text-right">Totale</td>
+                    <td class="text-right">4910,00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+</body>
+
+</html>
