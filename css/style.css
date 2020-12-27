@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h1, h3 {
     font-family: "roxborough", serif;
 }
 
@@ -85,10 +85,6 @@ nav ul li {
 
 #carrello .thumb img {
     height: 100px;
-}
-
-#carrello h3 {
-    font-family: "roxborough", serif;
 }
 
 #checkout-navigation {

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tali e Quadri</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Informazioni personali</h2>
+            <form action="#" method="post" id="info">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" value="mario@libero.it"
+                        placeholder="Inserisci il tuo indirizzo e-mail" required>
+                </div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" value="Mario" placeholder="Inserisci il tuo nome" required>
+                    <label for="cognome">Cognome</label>
+                    <input type="text" name="cognome" id="cognome" value="Rossi" placeholder="Inserisci il tuo cognome"
+                        required>
+                </div>
+                <div>
+                    <label for="nascita">Data di nascita</label>
+                    <input type="date" name="nascita" id="nascita" value="2000-01-01"
+                        placeholder="Inserisci la tua data di nascita" required>
+                </div>
+                <div>
+                    <span>Sesso</span>
+                    <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+                    <label for="maschio">Maschio</label>
+                    <input type="radio" id="femmina" name="sesso" value="femmina">
+                    <label for="femmina">Femmina</label>
+                    <input type="radio" id="altro" name="sesso" value="altro">
+                    <label for="altro">Altro</label>
+                </div>
+                <hr>
+                <div>
+                    <p>Se desideri modificare la tua password compila i campi sottostanti:</p>
+                    <label for="oldpassword">Password attuale</label>
+                    <input type="password" name="oldpassword" id="oldpassword"
+                        placeholder="Inserisci la tua password corrente">
+                    <label for="newpassword">Nuova password</label>
+                    <input type="password" name="newpassword" id="newpassword"
+                        placeholder="Inserisci la tua nuova password">
+                </div>
+                <div class="form-buttons">
+                    <button type="reset">Annulla Modifiche</button>
+                    <button type="submit">Salva Modifiche</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Storico ordini</h2>
+            <table id="ordini">
+                <thead>
+                    <tr>
+                        <th>Numero ordine</th>
+                        <th>Data</th>
+                        <th>Importo totale</th>
+                        <th>Pagamento</th>
+                        <th>Stato</th>
+                        <th>Fattura</th>
+                        <th>Dettaglio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JHAMHWDZI</td>
+                        <td>26/07/2018</td>
+                        <td>3700,00</td>
+                        <td><span class="paypal">PayPal</span></td>
+                        <td><span class="evaso">Evaso</span></td>
+                        <td><a href="fattura-JHAMHWDZI.pdf" title="Visualizza la fattura">icona download</a></td>
+                        <td><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
+                    </tr>
+                    <tr>
+                        <td>UDKQVHHQR</td>
+                        <td>13/11/2020</td>
+                        <td>2400,00</td>
+                        <td><span class="bonifico">Bonifico</span></td>
+                        <td><span class="in-lavorazione">In lavorazione</span></td>
+                        <td><a href="fattura-UDKQVHHQR.pdf" title="Visualizza la fattura">icona download</a></td>
+                        <td><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Indirizzi</h2>
+            <ul>
+                <li class="fatturazione">
+                    <p><strong>Mario Rossi</strong></p>
+                    <p class="indirizzo">via Roma, 1 <br>10100 Torino (TO) <br>Italia</p>
+                    <p class="telefono">349-5730286</p>
+                </li>
+                <li class="spedizione">
+                    <p><strong>Mario Rossi</strong></p>
+                    <p class="indirizzo">via Garibaldi, 100 <br>10100 Torino (TO) <br>Italia</p>
+                    <p class="telefono">011-583017</p>
+                </li>
+                <li class="altro">
+                    <p><strong>Mario Rossi c/o Azienda s.r.l.</strong></p>
+                    <p class="indirizzo">piazza Castello, 10 <br>10100 Torino (TO) <br>Italia</p>
+                    <p class="telefono">011-895436</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Wishlist</h2>
+            <details>
+                <summary>Lista nozze</summary>
+                <ul>
+                    <li><h3><a href="#" title="Vai al prodotto">Gustav Klimt - La vergine</a></h3></li>
+                </ul>
+            </details>
+            <details>
+                <summary>Casa al mare</summary>
+                <ul>
+                    <li><h3><a href="#" title="Vai al prodotto">Vincent Van Gogh - Mandorlo fiorito</a></h3></li>
+                </ul>
+            </details>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
