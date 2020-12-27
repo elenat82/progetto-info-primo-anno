@@ -28,6 +28,10 @@ h1 {
     text-align: right;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* ------ HEADER ------ */
 header {
     padding: 2rem;
@@ -49,10 +53,6 @@ header {
     display: flex;
 }
 
-#logo {
-    text-align: center;
-}
-
 #logo h2 {
     text-align: right;
 }
@@ -67,13 +67,34 @@ nav ul li {
 }
 
 /* ------- CARRELLO --------- */
-.thumb {
-    background-color: #ddd;
-    text-align: center;
+#checkout-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.thumb img {
+#carrello {
+    margin: auto;
+    border-spacing: 1rem;
+}
+
+#carrello .thumb {
+    background-color: #ddd;
+}
+
+#carrello .thumb img {
     height: 100px;
+}
+
+#carrello h3 {
+    font-family: "roxborough", serif;
+}
+
+#checkout-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
 /* ------- FOOTER ---------- */
