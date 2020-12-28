@@ -197,9 +197,19 @@ textarea {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+
+
+
   }
   
   .card button:hover {
     opacity: 0.7;
+
+    transform: scale(1.05);
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.2);
+
   }
 
