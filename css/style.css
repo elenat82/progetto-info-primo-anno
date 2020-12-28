@@ -169,10 +169,11 @@ textarea {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
+    margin: 30px;
     text-align: center;
     transform: scale(0.95);
     transition: box-shadow 0.5s, transform 0.5s;
+    display: inline-block;
   }
   .card:hover{
     transform: scale(1);
