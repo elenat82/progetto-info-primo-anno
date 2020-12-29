@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-h1, h3 {
+h1, h2, h3 {
     font-family: "roxborough", serif;
 }
 
@@ -93,6 +93,22 @@ nav ul li {
     margin-top: 2rem;
 }
 
+/* -------- PAGINA ACCOUNT ----------- */
+#pagina-account {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#pagina-account section {
+    padding: 1rem;
+    margin: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 4rem);
+}
+
 /* ------- FOOTER ---------- */
 
 .testo_footer {
@@ -122,7 +138,7 @@ hr {
     padding: 20px;
 }
 
-input[type="submit"] {
+.container_form input[type="submit"] {
     background-color: #4caf50;
     color: white;
     height: 50px;
@@ -134,13 +150,13 @@ input[type="submit"] {
     margin: 20px;
     display: flex;
 }
-input[type="submit"]:hover {
+.container_form input[type="submit"]:hover {
     background-color: #2e5730;
 }
 
-input[type="text"],
-select,
-textarea {
+.container_form input[type="text"],
+.container_form select,
+.container_form textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -151,9 +167,9 @@ textarea {
     resize: vertical;
 }
 
-input[type="email"],
-select,
-textarea {
+.container_form input[type="email"],
+.container_form select,
+.container_form textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
