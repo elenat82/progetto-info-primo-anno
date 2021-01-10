@@ -48,8 +48,7 @@ q {
     quotes: "" "";
 }
 /* ------- ACCESSIBILITA' ------- */
-input:focus,
-textarea:focus {
+    :focus {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
 }
@@ -93,11 +92,17 @@ h3 {
 .primary-background {
     background-color:#55536a;
 }
-.secondary-color {
+.secondary-color-light {
     color: #cfece8;
 }
-.secondary-background {
+.secondary-background-light {
     background-color: #cfece8;
+}
+.secondary-color-dark {
+    color: #49b6a8;
+}
+.secondary-background-light {
+    background-color: #49b6a8;
 }
 .dark-color {
     color: #49495e;
@@ -106,20 +111,17 @@ h3 {
     background-color: #49495e;
 }
 .light-color {
-    color: #dfe0e3;
+    color:#f7f7f8;
 }
 .light-background {
-    background-color: #dfe0e3;
+    background-color:#f7f7f8;
 }
 /* ----------- LINKS ------------ */
-a:link {
-
+a:link, a:visited {
+    color: #55536a;
 }
 a:hover, a:active, a:focus {
-
-}
-a:visited {
-
+    color: #49b6a8;
 }
 /* ------- FORMS ------------- */
 form {
@@ -142,24 +144,29 @@ textarea {
     border-radius: 4px;
 }
 /* -------------- BOTTONI ------------ */
-
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    /* trasforma il cursore in manina */
+    cursor: pointer;
+    /* specifica che tutte le prprietà che cambiano stato devono avere una transizione */
+    transition: all linear 0.3s;
+}
 /* ---------------- LAYOUT ------------- */
 body {
     max-width: 1024px;
     margin: auto;
 }
-
-
 /* ------ HEADER ------ */
-header {
-    padding: 2rem;
-}
 #topbar {
     width: 100%;
     /* specifica che gli elementi all'interno si dovranno affiancare */
     display: flex;
     /* specifica che gli elementi all'interno dovranno distribuirsi per tutta la larghezza*/
     justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 #topbar > * {
     /* specifica quanto dello spazio disponibile deve essere assegnato all'elemento*/
@@ -169,16 +176,55 @@ header {
     /* specifica la dimensine inizial degli elementi*/
     flex-basis: 33.33%;
 }
+#cerca input {
+    /*  i 50px sono la larghezza del bottone*/
+    width: calc(100% - 50px);
+}
+#cerca button:hover {
+    background-color: #cfece8;
+    transition: all linear 0.3s;
+}
+#cerca button:hover i {
+    color: #55536a;
+    transition: all linear 0.3s;
+}
+#logo a {
+    text-decoration: none;
+}
 #user-menu {
     display: flex;
+    /* specifica che gli elementi all'interno devono distribuirsi alla fine */
+    justify-content: flex-end;
+    padding: 2rem;
+}
+#user-menu li a {
+    text-decoration: none;
+    padding: 1rem;
+    transition: all linear 0.3s;
+}
+#user-menu li:hover a,
+#user-menu li:hover i {
+    background-color: #55536a;
+    color: #cfece8;
+    transition: all linear 0.3s;
 }
 nav ul {
     display: flex;
     /* specifica che gli elementi all'interno dovranno distribuirsi al centro */
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
-nav ul li {
-    margin: 2rem;
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    transition: all linear 0.3s;
+}
+nav ul li:hover a {
+    background-color: #cfece8;
+    color: #55536a;
+    transition: all linear 0.3s;
 }
 /* ------- CARRELLO --------- */
 #checkout-progress {
