@@ -46,34 +46,34 @@
                 <h3>Informazioni personali</h3>
                 <form action="#" method="post" id="info">
                     <div>
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail *</label>
                         <input type="email" name="email" id="email" value="mario@libero.it"
                             placeholder="Inserisci il tuo indirizzo e-mail" required>
                     </div>
                     <div>
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome *</label>
                         <input type="text" name="nome" id="nome" value="Mario" placeholder="Inserisci il tuo nome" required>
                         <label for="cognome">Cognome</label>
                         <input type="text" name="cognome" id="cognome" value="Rossi" placeholder="Inserisci il tuo cognome"
                             required>
                     </div>
                     <div>
-                        <label for="nascita">Data di nascita</label>
+                        <label for="nascita">Data di nascita *</label>
                         <input type="date" name="nascita" id="nascita" value="2000-01-01"
                             required>
                     </div>
                     <div>
-                        <span>Sesso</span>
-                        <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+                        <span>Sesso *</span>
+                        <input type="radio" id="maschio" name="sesso" value="maschio" required checked>
                         <label for="maschio">Maschio</label>
-                        <input type="radio" id="femmina" name="sesso" value="femmina">
+                        <input type="radio" id="femmina" name="sesso" value="femmina" required>
                         <label for="femmina">Femmina</label>
-                        <input type="radio" id="altro" name="sesso" value="altro">
+                        <input type="radio" id="altro" name="sesso" value="altro" required>
                         <label for="altro">Altro</label>
                     </div>
                     <hr>
                     <div>
-                        <p>Se desideri modificare la tua password compila i campi sottostanti:</p>
+                        <p class="hint">Se desideri modificare la tua password compila i campi sottostanti:</p>
                         <label for="oldpassword">Password attuale</label>
                         <input type="password" name="oldpassword" id="oldpassword"
                             placeholder="Inserisci la tua password corrente">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="form-buttons">
                         <button type="reset">Annulla Modifiche</button>
-                        <button type="submit">Salva Modifiche</button>
+                        <button type="submit" class="primary-background secondary-color-light">SALVA MODIFICHE</button>
                     </div>
                 </form>
             </section>
@@ -103,57 +103,63 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>JHAMHWDZI</td>
-                            <td>26/07/2018</td>
-                            <td>3700,00</td>
-                            <td><span class="paypal">PayPal</span></td>
-                            <td><span class="evaso">Evaso</span></td>
-                            <td><a href="fattura-JHAMHWDZI.pdf" title="Visualizza la fattura">icona download</a></td>
-                            <td><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
+                            <td class="n-ordine text-center">JHAMHWDZI</td>
+                            <td class="data-ordine text-center">26/07/2018</td>
+                            <td class="total-price primary-color text-center">3700,00</td>
+                            <td class="metodo-pagamento text-center"><span class="paypal"><i class="fab fa-paypal primary-color"></i> PayPal</span></td>
+                            <td class="stato-ordine text-center"><span class="evaso">Evaso</span></td>
+                            <td class="text-center"><a href="fattura-JHAMHWDZI.pdf" title="Visualizza la fattura"><i class="fas fa-file-download"></i></a></td>
+                            <td class="text-center"><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
                         </tr>
                         <tr>
-                            <td>UDKQVHHQR</td>
-                            <td>13/11/2020</td>
-                            <td>2400,00</td>
-                            <td><span class="bonifico">Bonifico</span></td>
-                            <td><span class="in-lavorazione">In lavorazione</span></td>
-                            <td><a href="fattura-UDKQVHHQR.pdf" title="Visualizza la fattura">icona download</a></td>
-                            <td><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
+                            <td class="n-ordine text-center">UDKQVHHQR</td>
+                            <td class="data-ordine text-center">13/11/2020</td>
+                            <td class="total-price primary-color text-center">2400,00</td>
+                            <td class="metodo-pagamento text-center"><span class="credit-card"><i class="far fa-credit-card primary-color"></i> Carta</span></td>
+                            <td class="stato-ordine text-center"><span class="in-lavorazione">In lavorazione</span></td>
+                            <td class="text-center"><a href="fattura-UDKQVHHQR.pdf" title="Visualizza la fattura"><i class="fas fa-file-download"></i></a></td>
+                            <td class="text-center"><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
                         </tr>
                     </tbody>
                 </table>
             </section>
             <section>
                 <h3>Indirizzi</h3>
-                <ul>
-                    <li class="fatturazione">
-                        <p><strong>Mario Rossi</strong></p>
+                <ul id="indirizzi">
+                    <li>
+                        <p class="tipo fatturazione">Fatturazione:</p>
+                        <p><strong class="primary-color">Mario Rossi</strong></p>
                         <p class="indirizzo">via Roma, 1 <br>10100 Torino (TO) <br>Italia</p>
                         <p class="telefono">349-5730286</p>
+                        <p><a href="#" title="Modifica l'indirizzo di fatturazione">Modifica</a></p>
                     </li>
-                    <li class="spedizione">
-                        <p><strong>Mario Rossi</strong></p>
+                    <li>
+                        <p class="tipo spedizione">Spedizione:</p>
+                        <p><strong class="primary-color">Mario Rossi</strong></p>
                         <p class="indirizzo">via Garibaldi, 100 <br>10100 Torino (TO) <br>Italia</p>
                         <p class="telefono">011-583017</p>
+                        <p><a href="#" title="Modifica l'indirizzo di spedizione">Modifica</a></p>
                     </li>
-                    <li class="altro">
-                        <p><strong>Mario Rossi c/o Azienda s.r.l.</strong></p>
+                    <li>
+                        <p class="tipo altro">Altro:</p>
+                        <p><strong class="primary-color">Mario Rossi c/o Azienda s.r.l.</strong></p>
                         <p class="indirizzo">piazza Castello, 10 <br>10100 Torino (TO) <br>Italia</p>
                         <p class="telefono">011-895436</p>
+                        <p><a href="#" title="Modifica l'indirizzo altro">Modifica</a></p>
                     </li>
                 </ul>
             </section>
             <section>
                 <h3>Wishlist</h3>
                 <details>
-                    <summary>Lista nozze</summary>
-                    <ul>
+                    <summary class="primary-color">Lista nozze</summary>
+                    <ul class="wishlist">
                         <li><h3><a href="#" title="Vai al prodotto">Gustav Klimt - La vergine</a></h3></li>
                     </ul>
                 </details>
                 <details>
-                    <summary>Casa al mare</summary>
-                    <ul>
+                    <summary class="primary-color">Casa al mare</summary>
+                    <ul  class="wishlist">
                         <li><h3><a href="#" title="Vai al prodotto">Vincent Van Gogh - Mandorlo fiorito</a></h3></li>
                     </ul>
                 </details>
