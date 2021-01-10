@@ -1,3 +1,59 @@
+/* ----- RESET CSS: serve per rimuovere gli sili di default che sono diversi
+per ogni browser ---------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead,tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol,
+ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+blockquote,
+q {
+    quotes: "" "";
+}
+/* ------- ACCESSIBILITA' ------- */
+input:focus,
+textarea:focus {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+/* --------- FORMATTAZIONE TESTO --------- */
 @font-face {
     font-family: "roxborough";
     src: url("fonts/roxborough.eot");
@@ -7,65 +63,123 @@
     font-weight: 100;
     font-style: normal;
 }
-
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 h1, h2, h3 {
     font-family: "roxborough", serif;
 }
-
+/* usiamo i rem invece che gli em in modo che le misure siano sempre relative al
+font-size del body e non a quello dell'elemento genitore */
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
 .text-right {
     text-align: right;
 }
-
 .text-center {
     text-align: center;
 }
+/* ----------- COLORI ------------ */
+.primary-color {
+    color: #55536a;
+}
+.primary-background {
+    background-color:#55536a;
+}
+.secondary-color {
+    color: #cfece8;
+}
+.secondary-background {
+    background-color: #cfece8;
+}
+.dark-color {
+    color: #49495e;
+}
+.dark-background {
+    background-color: #49495e;
+}
+.light-color {
+    color: #dfe0e3;
+}
+.light-background {
+    background-color: #dfe0e3;
+}
+/* ----------- LINKS ------------ */
+a:link {
+
+}
+a:hover, a:active, a:focus {
+
+}
+a:visited {
+
+}
+/* ------- FORMS ------------- */
+form {
+    padding: 2rem;
+}
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* -------------- BOTTONI ------------ */
+
+/* ---------------- LAYOUT ------------- */
+body {
+    max-width: 1024px;
+    margin: auto;
+}
+
 
 /* ------ HEADER ------ */
 header {
     padding: 2rem;
 }
-
 #topbar {
     width: 100%;
+    /* specifica che gli elementi all'interno si dovranno affiancare */
     display: flex;
+    /* specifica che gli elementi all'interno dovranno distribuirsi per tutta la larghezza*/
     justify-content: space-between;
 }
-
 #topbar > * {
+    /* specifica quanto dello spazio disponibile deve essere assegnato all'elemento*/
     flex-grow: 1;
+    /* specifica quanto dello spazio in eccesso deve essere rimosso dall'elemento*/
     flex-shrink: 1;
+    /* specifica la dimensine inizial degli elementi*/
     flex-basis: 33.33%;
 }
-
 #user-menu {
     display: flex;
 }
-
-#logo h2 {
-    text-align: right;
-}
-
 nav ul {
     display: flex;
+    /* specifica che gli elementi all'interno dovranno distribuirsi al centro */
     justify-content: center;
 }
-
 nav ul li {
     margin: 2rem;
 }
-
 /* ------- CARRELLO --------- */
 #checkout-progress {
     display: flex;
@@ -73,42 +187,84 @@ nav ul li {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 #carrello {
     margin: auto;
+    /* specifica la distanza tra due celle*/
     border-spacing: 1rem;
 }
-
-#carrello .thumb {
-    background-color: #ddd;
-}
-
 #carrello .thumb img {
     height: 100px;
+    /* stabilisce l'allineamento verticale per gli elementi inline e le celle delle tabelle*/
+    vertical-align: middle;
 }
-
 #checkout-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
-
 /* -------- PAGINA ACCOUNT ----------- */
 #pagina-account {
     display: flex;
+    /* specifica che gli elementi all'interno dovranno distribuirsi in modo da avere uguale spazio ai lati*/
     justify-content: space-around;
     width: 100%;
+    /* specifica che glie elementi all'interno possono andare a capo */
     flex-wrap: wrap;
 }
-
 #pagina-account section {
     padding: 1rem;
     margin: 1rem;
     flex-grow: 1;
     flex-shrink: 1;
+    /* calc esegue l'operazione, necessario perchè la width degli elementi + il padding + il margin fanno più del 100%  */
     flex-basis: calc(50% - 4rem);
 }
-
+/* ------------ PAGINA PRODOTTO ---------- */
+#pagina-prodotto {
+    display: flex;
+    flex-wrap: wrap;
+}
+#pagina-prodotto .half {
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    /* vh significa viewport height, 1vh è 1/100 dell'altezza della finestra */
+    height: 100vh;
+}
+#pagina-prodotto .left {
+    position: relative;
+    overflow: hidden;
+}
+#pagina-prodotto .left img {
+    height: 100%;
+}
+#pagina-prodotto .left .img-big {
+    position: absolute;
+    left: 0%;
+    top: 00%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* specifica che gli elementi devono allinearsi al centro verticalmente */
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity linear 0.5s;
+}
+#pagina-prodotto .left:hover .img-big {
+    opacity: 1;
+    /* proprietà da animare, velocità dell'animazione e durata */
+    transition: opacity linear 0.5s;
+}
+#pagina-prodotto .right {
+    background-color: orange;
+}
+#pagina-prodotto .dettagli {
+    padding: 2rem;
+}
 /* ------- FOOTER ---------- */
 
 .testo_footer {
@@ -128,7 +284,7 @@ hr {
     margin: 30px auto;
 }
 
-.container_form {
+/* .container_form {
     background: rgba(34, 17, 97, 0.65);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(7.5px);
@@ -137,8 +293,8 @@ hr {
     margin: 5vh;
     padding: 20px;
 }
-
-.container_form input[type="submit"] {
+ */
+/* .container_form input[type="submit"] {
     background-color: #4caf50;
     color: white;
     height: 50px;
@@ -149,12 +305,12 @@ hr {
     cursor: pointer;
     margin: 20px;
     display: flex;
-}
-.container_form input[type="submit"]:hover {
+} */
+/* .container_form input[type="submit"]:hover {
     background-color: #2e5730;
-}
+} */
 
-.container_form input[type="text"],
+/* .container_form input[type="text"],
 .container_form select,
 .container_form textarea {
     width: 100%;
@@ -165,9 +321,9 @@ hr {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
+} */
 
-.container_form input[type="email"],
+/* .container_form input[type="email"],
 .container_form select,
 .container_form textarea {
     width: 100%;
@@ -178,7 +334,7 @@ hr {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
+} */
 
 /* ------- SCHEDA PRODOTTO ---------- */
 
@@ -190,20 +346,18 @@ hr {
     transform: scale(0.95);
     transition: box-shadow 0.5s, transform 0.5s;
     display: inline-block;
-  }
-  .card:hover{
+}
+.card:hover {
     transform: scale(1);
-    box-shadow: 5px 20px 50px rgba(0,0,0,0.2);
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.2);
+}
 
-  }
-
-  
-  .price {
+.price {
     color: grey;
     font-size: 22px;
-  }
-  
-  .card button {
+}
+
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -216,16 +370,11 @@ hr {
 
     transform: scale(0.95);
     transition: box-shadow 0.5s, transform 0.5s;
+}
 
-
-
-  }
-  
-  .card button:hover {
+.card button:hover {
     opacity: 0.7;
 
     transform: scale(1.05);
-    box-shadow: 5px 10px 5px rgba(0,0,0,0.2);
-
-  }
-
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
