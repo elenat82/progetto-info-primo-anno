@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tali e Quadri</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light-background">
+    <header>
+        <div id="topbar">
+            <form action="#" method="get" id="cerca" role="search">
+                <input type="search" name="keyword" maxlength="50"
+                    aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
+                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background"><i
+                        class="fas fa-search secondary-color-light"></i></button>
+            </form>
+            <div id="logo" class="text-center">
+                <a href="index.html" title="Home">
+                    <img src="img/logo.svg" alt="Logo" width="100">
+                    <h1 class="primary-color text-right">Tali e Quadri</h1>
+                </a>
+            </div>
+            <ul id="user-menu">
+                <li><a href="account.html" title="Vai alla pagina Account"><i class="far fa-user primary-color"></i>
+                        Account</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello"><i
+                            class="fas fa-shopping-cart primary-color"></i> Carrello</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Vai alla pagina Home" accesskey="h"
+                        class="primary-color menu-active">HOME</a></li>
+                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo" accesskey="s" class="primary-color">CHI
+                        SIAMO</a></li>
+                <li><a href="artisti.html" title="Vai alla pagina Artisti" accesskey="a"
+                        class="primary-color">ARTISTI</a></li>
+                <li><a href="contatti.html" title="Vai alla pagina Contatti" accesskey="c"
+                        class="primary-color">CONTATTI</a></li>
+                <li><a href="ricerca.html" title="Vai alla pagina Ricerca" accesskey="r"
+                        class="secondary-background-dark">Partecipa alla ricerca!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Partecipa alla ricerca!</h2>
+        <p class="info-ricerca">Compila il questionario per partecipare alla ricerca sociologica sul tema <strong class="primary-color">"Il consumatore di beni di imitazione"</strong>, guarda il video per saperne di più.</p>
+        <p class="info-ricerca">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rerum quisquam ex libero sit nihil  possimus eaque deserunt error adipisci. Voluptates at autem recusandae ducimus hic non similique sapiente sequi?</p>
+        <section>
+            <video controls preload="metadata">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+                <track label="Italiano" kind="subtitles" srclang="it" src="video/video.vtt">
+                </track>
+                <p>Il tuo browser non supporta i video. Ecco un <a href="video.mp4" title="Scarica il video">link al
+                        video</a> che puoi scaricare.</p>
+            </video>
+        </section>
+        <section>
+            <form action="thankyou-page.html" method="post" id="ricerca">
+                <label for="domanda1">Domanda 1</label><br>
+                <textarea id="domanda1" name="domanda1" placeholder="Rispondi alla prima domanda" rows="5"></textarea>
+                <label for="domanda2">Domanda 2</label><br>
+                <textarea id="domanda2" name="domanda2" placeholder="Rispondi alla seconda domanda" rows="5"></textarea>
+                <label for="domanda3">Domanda 3</label><br>
+                <textarea id="domanda3" name="domanda3" placeholder="Rispondi alla terza domanda" rows="5"></textarea>
+                <label for="domanda4">Domanda 4</label><br>
+                <textarea id="domanda4" name="domanda4" placeholder="Rispondi alla quarta domanda" rows="5"></textarea>
+                <button type="submit" class="primary-background secondary-color-light">INVIA</button>
+            </form>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

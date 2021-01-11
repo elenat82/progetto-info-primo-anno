@@ -1,5 +1,5 @@
 /* ----- RESET CSS: serve per rimuovere gli sili di default che sono diversi
-per ogni browser ---------- */
+per ogni browser https://en.wikipedia.org/wiki/Reset_style_sheet ---------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
 em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
@@ -75,6 +75,7 @@ h1 {
 }
 h2 {
     font-size: 1.5rem;
+    margin-top: 2rem;
 }
 h3 {
     font-size: 1.3rem;
@@ -175,6 +176,14 @@ button {
     padding: 0.5rem;
     display: block;
 }
+/* ------------ VIDEO ---------------- */
+video {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #cfece8;
+}
 /* ---------------- LAYOUT ------------- */
 body {
     max-width: 1024px;
@@ -239,6 +248,7 @@ nav ul {
     display: flex;
     /* specifica che gli elementi all'interno dovranno distribuirsi al centro */
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
@@ -257,6 +267,19 @@ nav ul li:hover a {
 nav ul li a.menu-active {
     background-color: #49b6a8;
     color: white;
+}
+nav ul li:last-child a {
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 100px;
+    border-bottom-left-radius: 40px;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+nav ul li:last-child a:hover {
+    color: #55536a;
+    transition: all linear 0.3s;
 }
 /* ------- FOOTER ---------- */
 footer {
@@ -463,9 +486,15 @@ details .wishlist a {
 #pagina-prodotto .dettagli {
     padding: 2rem;
 }
+/* --------------- PAGINA RICERCA -------------------- */
+.info-ricerca {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
 /* ------------- PAGINA CONTATTI --------------------- */
 #contatti button:hover,
-#info button:hover {
+#info button:hover,
+#ricerca button:hover {
     color:#55536a;
     background-color: #cfece8;
     transition: opacity linear 0.5s;
