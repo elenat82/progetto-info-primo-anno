@@ -175,6 +175,8 @@ button {
 .breadcrumbs li a {
     padding: 0.5rem;
     display: block;
+    font-weight: bold;
+    text-decoration: none;
 }
 /* ------------ VIDEO ---------------- */
 video {
@@ -372,10 +374,12 @@ footer .icons a {
 #carrello .thumb img {
     width: 100px;
 }
-#carrello .prices .scontato span:nth-child(1) {
+#carrello .prices .scontato span:nth-child(1),
+#pagina-prodotto .prices .scontato span:nth-child(1) {
     text-decoration: line-through;
 }
-#carrello .prices .scontato .sconto {
+#carrello .prices .scontato .sconto,
+#pagina-prodotto .prices .scontato .sconto {
     vertical-align: super;
     font-style: italic;
 }
@@ -484,7 +488,62 @@ details .wishlist a {
     transition: opacity linear 0.5s;
 }
 #pagina-prodotto .dettagli {
+    display: flex;
+    /* specifica che gli elementi si devono disporre sull'asse verticale*/
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+/*  con il selettore > si selezionano solo gli elementi direttamente discendenti */
+#pagina-prodotto .dettagli > * {
     padding: 2rem;
+}
+#pagina-prodotto .dettagli .autore-titolo a {
+    text-decoration: none;
+}
+#pagina-prodotto .dettagli .autore-titolo h2 {
+    font-weight: bold;
+}
+#pagina-prodotto .dettagli .rating .fas.fa-star {
+    color: gold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+#pagina-prodotto .dettagli .dimensioni select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+#pagina-prodotto .dettagli .prices {
+    display: flex;
+    align-items: center;
+}
+#pagina-prodotto .dettagli .prices > p {
+    margin-right: 1rem;
+}
+#pagina-prodotto .dettagli .prices .finale {
+    font-weight: bold;
+}
+#pagina-prodotto .dettagli #cta a,
+#pagina-prodotto .dettagli #wishlist a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+#pagina-prodotto .dettagli #cta a {
+    color: white;
+}
+#pagina-prodotto .dettagli #wishlist a {
+    border: 1px solid #55536a;
+}
+#pagina-prodotto .dettagli .icons {
+    display: flex;
+}
+#pagina-prodotto .dettagli .icons li {
+    margin-right: 1rem;
 }
 /* --------------- PAGINA RICERCA -------------------- */
 .info-ricerca {
