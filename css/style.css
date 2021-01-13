@@ -65,7 +65,7 @@ q {
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-h1, h2, h3 {
+h1, h2, h3, .domanda {
     font-family: "roxborough", serif;
 }
 /* usiamo i rem invece che gli em in modo che le misure siano sempre relative al
@@ -85,6 +85,9 @@ h3 {
 }
 .text-center {
     text-align: center;
+}
+.text-bold {
+    font-weight: bold;
 }
 /* ----------- COLORI ------------ */
 .primary-color {
@@ -159,7 +162,6 @@ textarea {
 button {
     background-color: transparent;
     border: none;
-    font-weight: bold;
     padding: 0.5rem 1rem;
     /* trasforma il cursore in manina */
     cursor: pointer;
@@ -175,7 +177,6 @@ button {
 .breadcrumbs li a {
     padding: 0.5rem;
     display: block;
-    font-weight: bold;
     text-decoration: none;
 }
 /* ------------ VIDEO ---------------- */
@@ -257,7 +258,6 @@ nav ul {
 nav ul li a {
     display: block;
     text-decoration: none;
-    font-weight: bold;
     padding: 1rem 2rem;
     transition: all linear 0.3s;
 }
@@ -332,9 +332,6 @@ footer .icons a {
     background-color: #49b6a8;
     font-weight: bold;
 }
-#checkout-progress li.current a {
-    font-weight: bold;
-}
 #carrello,
 #ordini {
     margin: 2rem auto;
@@ -345,8 +342,6 @@ footer .icons a {
 }
 #carrello th,
 #ordini th {
-    font-weight: bold;
-    text-align: center;
     vertical-align: middle;
     padding: 0.5rem 1rem;
 }
@@ -386,10 +381,6 @@ footer .icons a {
 #carrello input[type="number"] {
     margin-right: 1rem;
 }
-#carrello .total-price,
-#ordini .total-price {
-    font-weight: bold;
-}
 #carrello tfoot td:last-child {
     padding: 0.5rem;
 }
@@ -428,9 +419,6 @@ footer .icons a {
 #indirizzi .tipo {
     font-style: italic;
     margin-bottom: 0.5rem;
-}
-#indirizzi strong {
-    font-weight: bold;
 }
 #indirizzi li p:last-child {
     margin-top: 0.5rem;
@@ -501,9 +489,6 @@ details .wishlist a {
 #pagina-prodotto .dettagli .autore-titolo a {
     text-decoration: none;
 }
-#pagina-prodotto .dettagli .autore-titolo h2 {
-    font-weight: bold;
-}
 #pagina-prodotto .dettagli .rating .fas.fa-star {
     color: gold;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
@@ -520,17 +505,12 @@ details .wishlist a {
 #pagina-prodotto .dettagli .prices > p {
     margin-right: 1rem;
 }
-#pagina-prodotto .dettagli .prices .finale {
-    font-weight: bold;
-}
 #pagina-prodotto .dettagli #cta a,
 #pagina-prodotto .dettagli #wishlist a {
     display: block;
     padding: 0.7rem 1.2rem;
     margin-bottom: 1rem;
     border-radius: 20px;
-    text-align: center;
-    font-weight: bold;
     text-decoration: none;
 }
 #pagina-prodotto .dettagli #cta a {

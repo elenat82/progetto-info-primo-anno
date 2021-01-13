@@ -17,7 +17,7 @@
             <form action="#" method="get" id="cerca" role="search">
                 <input type="search" name="keyword" maxlength="50"
                     aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background"><i
+                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i
                         class="fas fa-search secondary-color-light"></i></button>
             </form>
             <div id="logo" class="text-center">
@@ -36,15 +36,15 @@
         <nav>
             <ul>
                 <li><a href="index.html" title="Vai alla pagina Home" accesskey="h"
-                        class="primary-color menu-active">HOME</a></li>
-                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo" accesskey="s" class="primary-color">CHI
+                        class="primary-color text-bold">HOME</a></li>
+                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo" accesskey="s" class="primary-color text-bold">CHI
                         SIAMO</a></li>
                 <li><a href="artisti.html" title="Vai alla pagina Artisti" accesskey="a"
-                        class="primary-color">ARTISTI</a></li>
+                        class="primary-color text-bold">ARTISTI</a></li>
                 <li><a href="contatti.html" title="Vai alla pagina Contatti" accesskey="c"
-                        class="primary-color">CONTATTI</a></li>
+                        class="primary-color text-bold">CONTATTI</a></li>
                 <li><a href="ricerca.html" title="Vai alla pagina Ricerca" accesskey="r"
-                        class="secondary-background-dark">Partecipa alla ricerca!</a></li>
+                        class="secondary-background-dark text-bold">Partecipa alla ricerca!</a></li>
             </ul>
         </nav>
     </header>
@@ -64,15 +64,140 @@
         </section>
         <section>
             <form action="thankyou-page.html" method="post" id="ricerca">
-                <label for="domanda1">Domanda 1</label><br>
-                <textarea id="domanda1" name="domanda1" placeholder="Rispondi alla prima domanda" rows="5"></textarea>
-                <label for="domanda2">Domanda 2</label><br>
-                <textarea id="domanda2" name="domanda2" placeholder="Rispondi alla seconda domanda" rows="5"></textarea>
-                <label for="domanda3">Domanda 3</label><br>
-                <textarea id="domanda3" name="domanda3" placeholder="Rispondi alla terza domanda" rows="5"></textarea>
-                <label for="domanda4">Domanda 4</label><br>
-                <textarea id="domanda4" name="domanda4" placeholder="Rispondi alla quarta domanda" rows="5"></textarea>
-                <button type="submit" class="primary-background secondary-color-light">INVIA</button>
+                <p id="domanda-1" class="domanda primary-color text-bold">In che zona d'Italia è residente attualmente?</p>
+                <label for="nord">Nord</label>
+                <input type="radio" name="risposta-1" id="nord" value="nord">
+                <label for="centro">Centro</label>
+                <input type="radio" name="risposta-1" id="centro" value="centro">
+                <label for="sud">Sud</label>
+                <input type="radio" name="risposta-1" id="sud" value="sud">
+
+                <p id="domanda-2" class="domanda primary-color text-bold">Qual è il suo reddito annuo lordo attuale?</p>
+                <label for="basso">Da 0 a 18.000</label>
+                <input type="radio" name="risposta-2" id="basso" value="basso">
+                <label for="medio">Da 19.000 a 30.000</label>
+                <input type="radio" name="risposta-2" id="medio" value="medio">
+                <label for="alto">Da 31.000 in su</label>
+                <input type="radio" name="risposta-2" id="alto" value="alto">
+
+                <p id="domanda-3" class="domanda primary-color text-bold">Qual è il suo livello di istruzione attualmente?</p>
+                <label for="elementare">Licenza elementare</label>
+                <input type="radio" name="risposta-3" id="elementare" value="elementare">
+                <label for="media">Licenza media</label>
+                <input type="radio" name="risposta-3" id="media" value="media">
+                <label for="diploma">Diploma</label>
+                <input type="radio" name="risposta-3" id="diploma" value="diploma">
+                <label for="laurea">Laurea</label>
+                <input type="radio" name="risposta-3" id="laurea" value="laurea">
+
+                <p id="domanda-4" class="domanda primary-color text-bold">Nell'ultimo anno, quante volte ha acquistato un prodotto non originale?</p>
+                <label for="mai">Mai</label>
+                <input type="radio" name="risposta-4" id="mai" value="mai">
+                <label for="raramente">Meno di 5 volte</label>
+                <input type="radio" name="risposta-4" id="raramente" value="raramente">
+                <label for="spesso">Da 5 a 10 volte</label>
+                <input type="radio" name="risposta-4" id="spesso" value="spesso">
+                <label for="assiduamente">Più di 10 volte</label>
+                <input type="radio" name="risposta-4" id="assiduamente" value="assiduamente">
+
+                <p id="domanda-5" class="domanda primary-color text-bold">Nell'ultimo anno, quali delle seguenti tipologie di prodotto ha acquistato?</p>
+                <label for="alimentari">Alimentari</label>
+                <input type="checkbox" name="risposta-5" id="alimentari" value="alimentari">
+                <label for="abbigliamento">Abbigliamento e/o accessori</label>
+                <input type="checkbox" name="risposta-5" id="abbigliamento" value="abbigliamento">
+                <label for="cosmetici">Cosmetici e/o profumi</label>
+                <input type="checkbox" name="risposta-5" id="cosmetici" value="cosmetici">
+                <label for="gioielli">Gioielli e/o orologi</label>
+                <input type="checkbox" name="risposta-5" id="gioielli" value="gioielli">
+                <label for="altro">Altro</label>
+                <input type="checkbox" name="risposta-5" id="altro" value="altro">
+                
+                <p id="domanda-6" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, da quale venditore l'ha acquistato?</p>
+                <label for="strada">Da un venditore di strada</label>
+                <input type="radio" name="risposta-6" id="strada" value="strada">
+                <label for="bancarella">Da una bancarella</label>
+                <input type="radio" name="risposta-6" id="bancarella" value="bancarella">
+                <label for="internet">Su internet</label>
+                <input type="radio" name="risposta-6" id="internet" value="internet">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="radio" name="risposta-6" id="altro" value="altro">
+
+                <p id="domanda-7" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, in che luogo l'ha acquistato?</p>
+                <label for="centro">In centro nella mia città</label>
+                <input type="radio" name="risposta-7" id="centro" value="centro">
+                <label for="periferia">Nella periferia della mia città</label>
+                <input type="radio" name="risposta-7" id="periferia" value="periferia">
+                <label for="vacanza">In un luogo di vacanza</label>
+                <input type="radio" name="risposta-7" id="vacanza" value="vacanza">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="radio" name="risposta-7" id="altro" value="altro">
+
+                <p id="domanda-8" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, con chi era?</p>
+                <label for="solo">Da solo/a</label>
+                <input type="radio" name="risposta-8" id="solo" value="solo">
+                <label for="altri-no">Con altre persone ma loro non hanno acquistato un prodotto non originale</label>
+                <input type="radio" name="risposta-8" id="altri-no" value="altri-no">
+                <label for="altri-si">Con altre persone e anche loro hanno acquistato un prodotto non originale</label>
+                <input type="radio" name="risposta-8" id="altri-si" value="altri-si">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="radio" name="risposta-8" id="altro" value="altro">
+
+                <p id="domanda-9" class="domanda primary-color text-bold">Ripensando all'ultima volta che ha acquistato un prodotto non originale, lo definirebbe un acquisto:</p>
+                <label for="impulso">D'impulso, ho acquistato senza pensare</label>
+                <input type="radio" name="risposta-9" id="impulso" value="impulso">
+                <label for="pianificato">Pianificato, sono andato/a cercare quello specifico prodotto</label>
+                <input type="radio" name="risposta-9" id="pianificato" value="pianificato">
+                <label for="ripiego">Un ripiego, ho acquistato quel prodotto perchè non ho potuto acquistare l'originale</label>
+                <input type="radio" name="risposta-9" id="ripiego" value="ripiego">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="radio" name="risposta-9" id="altro" value="altro">
+
+                <p id="domanda-10" class="domanda primary-color text-bold">Ripensando all'ultima volta che ha acquistato un prodotto non originale, quali sono state le sue motivazioni?</p>
+                <label for="risparmio">Per risparmiare</label>
+                <input type="checkbox" name="risposta-10" id="risparmio" value="risparmio">
+                <label for="moda">Per essere alla moda</label>
+                <input type="checkbox" name="risposta-10" id="moda" value="moda">
+                <label for="qualita">Perchè la qualità è la stessa dell'originale</label>
+                <input type="checkbox" name="risposta-10" id="qualita" value="qualita">
+                <label for="perdita">Perchè non perdo molto e si rovina</label>
+                <input type="checkbox" name="risposta-10" id="perdita" value="perdita">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="checkbox" name="risposta-10" id="altro" value="altro">
+
+                <p id="domanda-11" class="domanda primary-color text-bold">Dopo l'ultima volta che ha acquistato un prodotto non originale, che sentimenti ha provato?</p>
+                <label for="entusiasmo">Entusiasmo per il nuovo prodotto</label>
+                <input type="checkbox" name="risposta-11" id="entusiasmo" value="entusiasmo">
+                <label for="soddisfazione">Soddisfazione per aver risparmiato</label>
+                <input type="checkbox" name="risposta-11" id="soddisfazione" value="soddisfazione">
+                <label for="preoccupazione">Preoccupazione per eventuali controlli legali</label>
+                <input type="checkbox" name="risposta-11" id="preoccupazione" value="preoccupazione">
+                <label for="delusione">Delusione per non aver potuto acquistare l'originale</label>
+                <input type="checkbox" name="risposta-11" id="delusione" value="delusione">
+                <label for="imbarazzo">Imbarazzo per aver contravvenuto alle regole</label>
+                <input type="checkbox" name="risposta-11" id="imbarazzo" value="imbarazzo">
+                <label for="altro">Altro / non applicabile</label>
+                <input type="checkbox" name="risposta-11" id="altro" value="altro">
+
+                <p id="domanda-12" class="domanda primary-color text-bold">Indichi quanto è d'accordo con la seguente affermazione: I prodotti originali sono ingiustificatamente cari</p>
+                <label for="niente">Per niente d'accordo</label>
+                <input type="radio" name="risposta-12" id="niente" value="1">
+                <label for="parzialmente">Parzialmente d'accordo</label>
+                <input type="radio" name="risposta-12" id="parzialmente" value="2">
+                <label for="daccordo">D'accordo</label>
+                <input type="radio" name="risposta-12" id="daccordo" value="daccordo">
+                <label for="totalmente">Totalmente d'accordo</label>
+                <input type="radio" name="risposta-12" id="totalmente" value="3">
+
+                <p id="domanda-13" class="domanda primary-color text-bold">Indichi quanto è d'accordo con la seguente affermazione: I controlli sui prodotti non originali sono inefficaci</p>
+                <label for="niente">Per niente d'accordo</label>
+                <input type="radio" name="risposta-13" id="niente" value="1">
+                <label for="parzialmente">Parzialmente d'accordo</label>
+                <input type="radio" name="risposta-13" id="parzialmente" value="2">
+                <label for="daccordo">D'accordo</label>
+                <input type="radio" name="risposta-13" id="daccordo" value="daccordo">
+                <label for="totalmente">Totalmente d'accordo</label>
+                <input type="radio" name="risposta-13" id="totalmente" value="3">
+                <button type="submit" class="primary-background secondary-color-light text-bold">INVIA</button>
             </form>
         </section>
 
