@@ -17,8 +17,8 @@
             <form action="#" method="get" id="cerca" role="search">
                 <input type="search" name="keyword" maxlength="50"
                     aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i
-                        class="fas fa-search secondary-color-light"></i></button>
+                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button
+                    class="primary-background text-bold"><i class="fas fa-search secondary-color-light"></i></button>
             </form>
             <div id="logo" class="text-center">
                 <a href="index.html" title="Home">
@@ -37,7 +37,8 @@
             <ul>
                 <li><a href="index.html" title="Vai alla pagina Home" accesskey="h"
                         class="primary-color text-bold">HOME</a></li>
-                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo" accesskey="s" class="primary-color text-bold">CHI
+                <li><a href="chisiamo.html" title="Vai alla pagina Chi siamo" accesskey="s"
+                        class="primary-color text-bold">CHI
                         SIAMO</a></li>
                 <li><a href="artisti.html" title="Vai alla pagina Artisti" accesskey="a"
                         class="primary-color text-bold">ARTISTI</a></li>
@@ -50,154 +51,183 @@
     </header>
     <main>
         <h2>Partecipa alla ricerca!</h2>
-        <p class="info-ricerca">Compila il questionario per partecipare alla ricerca sociologica sul tema <strong class="primary-color">"Il consumatore di beni di imitazione"</strong>, guarda il video per saperne di più.</p>
-        <p class="info-ricerca">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rerum quisquam ex libero sit nihil  possimus eaque deserunt error adipisci. Voluptates at autem recusandae ducimus hic non similique sapiente sequi?</p>
+        <p class="info-ricerca">Compila il questionario per partecipare alla ricerca sociologica sul tema <strong class="primary-color text-bold">"Il consumatore di prodotti non originali"</strong>, guarda il video per saperne di più.</p>
+        <p class="info-ricerca">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rerum quisquam ex libero sit nihil possimus eaque deserunt error adipisci. Voluptates at autem recusandae ducimus hic non similique sapiente sequi?</p>
         <section>
             <video controls preload="metadata">
                 <source src="video/video.mp4" type="video/mp4">
                 <source src="video/video.webm" type="video/webm">
                 <track label="Italiano" kind="subtitles" srclang="it" src="video/video.vtt">
                 </track>
-                <p>Il tuo browser non supporta i video. Ecco un <a href="video.mp4" title="Scarica il video">link al
-                        video</a> che puoi scaricare.</p>
+                <p>Il tuo browser non supporta i video. Ecco un <a href="video.mp4" title="Scarica il video">link alvideo</a> che puoi scaricare.</p>
             </video>
         </section>
         <section>
             <form action="thankyou-page.html" method="post" id="ricerca">
-                <p id="domanda-1" class="domanda primary-color text-bold">In che zona d'Italia è residente attualmente?</p>
-                <label for="nord">Nord</label>
-                <input type="radio" name="risposta-1" id="nord" value="nord">
-                <label for="centro">Centro</label>
-                <input type="radio" name="risposta-1" id="centro" value="centro">
-                <label for="sud">Sud</label>
-                <input type="radio" name="risposta-1" id="sud" value="sud">
+                <div class="domanda">
+                    <p id="domanda-1" class="primary-color text-bold"><span class="nr-domanda">1.</span> In che zona d'Italia è residente attualmente?</p>
+                    <input type="radio" name="risposta-1" id="nord" value="nord">
+                    <label for="nord">Nord</label>
+                    <input type="radio" name="risposta-1" id="centro" value="centro">
+                    <label for="centro">Centro</label>
+                    <input type="radio" name="risposta-1" id="sud" value="sud">
+                    <label for="sud">Sud</label>
+                </div>
 
-                <p id="domanda-2" class="domanda primary-color text-bold">Qual è il suo reddito annuo lordo attuale?</p>
-                <label for="basso">Da 0 a 18.000</label>
-                <input type="radio" name="risposta-2" id="basso" value="basso">
-                <label for="medio">Da 19.000 a 30.000</label>
-                <input type="radio" name="risposta-2" id="medio" value="medio">
-                <label for="alto">Da 31.000 in su</label>
-                <input type="radio" name="risposta-2" id="alto" value="alto">
+                <div class="domanda">
+                    <p id="domanda-2" class="primary-color text-bold"><span class="nr-domanda">2.</span> Qual è il suo reddito annuo lordo attuale?
+                    </p>
+                    <input type="radio" name="risposta-2" id="basso" value="basso">
+                    <label for="basso">Da 0 a 18.000</label>
+                    <input type="radio" name="risposta-2" id="medio" value="medio">
+                    <label for="medio">Da 19.000 a 30.000</label>
+                    <input type="radio" name="risposta-2" id="alto" value="alto">
+                    <label for="alto">Da 31.000 in su</label>
+                </div>
 
-                <p id="domanda-3" class="domanda primary-color text-bold">Qual è il suo livello di istruzione attualmente?</p>
-                <label for="elementare">Licenza elementare</label>
-                <input type="radio" name="risposta-3" id="elementare" value="elementare">
-                <label for="media">Licenza media</label>
-                <input type="radio" name="risposta-3" id="media" value="media">
-                <label for="diploma">Diploma</label>
-                <input type="radio" name="risposta-3" id="diploma" value="diploma">
-                <label for="laurea">Laurea</label>
-                <input type="radio" name="risposta-3" id="laurea" value="laurea">
+                <div class="domanda">
+                    <p id="domanda-3" class="primary-color text-bold"><span class="nr-domanda">3.</span> Qual è il suo livello di istruzione attualmente?</p>
+                    <input type="radio" name="risposta-3" id="elementare" value="elementare">
+                    <label for="elementare">Licenza elementare</label>
+                    <input type="radio" name="risposta-3" id="media" value="media">
+                    <label for="media">Licenza media</label>
+                    <input type="radio" name="risposta-3" id="diploma" value="diploma">
+                    <label for="diploma">Diploma</label>
+                    <input type="radio" name="risposta-3" id="laurea" value="laurea">
+                    <label for="laurea">Laurea</label>
+                    <input type="radio" name="risposta-3" id="altro" value="altro">
+                    <label for="altro">Altro/Non applicabile</label>
+                </div>
 
-                <p id="domanda-4" class="domanda primary-color text-bold">Nell'ultimo anno, quante volte ha acquistato un prodotto non originale?</p>
-                <label for="mai">Mai</label>
-                <input type="radio" name="risposta-4" id="mai" value="mai">
-                <label for="raramente">Meno di 5 volte</label>
-                <input type="radio" name="risposta-4" id="raramente" value="raramente">
-                <label for="spesso">Da 5 a 10 volte</label>
-                <input type="radio" name="risposta-4" id="spesso" value="spesso">
-                <label for="assiduamente">Più di 10 volte</label>
-                <input type="radio" name="risposta-4" id="assiduamente" value="assiduamente">
+                <div class="domanda">
+                    <p id="domanda-4" class="primary-color text-bold"><span class="nr-domanda">4.</span> Nell'ultimo anno, quante volte ha acquistato un prodotto non originale?</p>
+                    <input type="radio" name="risposta-4" id="mai" value="mai">
+                    <label for="mai">Mai</label>
+                    <input type="radio" name="risposta-4" id="raramente" value="raramente">
+                    <label for="raramente">Meno di 5 volte</label>
+                    <input type="radio" name="risposta-4" id="spesso" value="spesso">
+                    <label for="spesso">Da 5 a 10 volte</label>
+                    <input type="radio" name="risposta-4" id="assiduamente" value="assiduamente">
+                    <label for="assiduamente">Più di 10 volte</label>
+                </div>
 
-                <p id="domanda-5" class="domanda primary-color text-bold">Nell'ultimo anno, quali delle seguenti tipologie di prodotto ha acquistato?</p>
-                <label for="alimentari">Alimentari</label>
-                <input type="checkbox" name="risposta-5" id="alimentari" value="alimentari">
-                <label for="abbigliamento">Abbigliamento e/o accessori</label>
-                <input type="checkbox" name="risposta-5" id="abbigliamento" value="abbigliamento">
-                <label for="cosmetici">Cosmetici e/o profumi</label>
-                <input type="checkbox" name="risposta-5" id="cosmetici" value="cosmetici">
-                <label for="gioielli">Gioielli e/o orologi</label>
-                <input type="checkbox" name="risposta-5" id="gioielli" value="gioielli">
-                <label for="altro">Altro</label>
-                <input type="checkbox" name="risposta-5" id="altro" value="altro">
-                
-                <p id="domanda-6" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, da quale venditore l'ha acquistato?</p>
-                <label for="strada">Da un venditore di strada</label>
-                <input type="radio" name="risposta-6" id="strada" value="strada">
-                <label for="bancarella">Da una bancarella</label>
-                <input type="radio" name="risposta-6" id="bancarella" value="bancarella">
-                <label for="internet">Su internet</label>
-                <input type="radio" name="risposta-6" id="internet" value="internet">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="radio" name="risposta-6" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-5" class="primary-color text-bold"><span class="nr-domanda">5.</span> Nell'ultimo anno, quali delle seguenti tipologie di prodotto ha acquistato?</p>
+                    <input type="checkbox" name="risposta-5" id="alimentari" value="alimentari">
+                    <label for="alimentari">Alimentari</label>
+                    <input type="checkbox" name="risposta-5" id="abbigliamento" value="abbigliamento">
+                    <label for="abbigliamento">Abbigliamento e/o accessori</label>
+                    <input type="checkbox" name="risposta-5" id="cosmetici" value="cosmetici">
+                    <label for="cosmetici">Cosmetici e/o profumi</label>
+                    <input type="checkbox" name="risposta-5" id="gioielli" value="gioielli">
+                    <label for="gioielli">Gioielli e/o orologi</label>
+                    <input type="checkbox" name="risposta-5" id="altro" value="altro">
+                    <label for="altro">Altro</label>
+                </div>
 
-                <p id="domanda-7" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, in che luogo l'ha acquistato?</p>
-                <label for="centro">In centro nella mia città</label>
-                <input type="radio" name="risposta-7" id="centro" value="centro">
-                <label for="periferia">Nella periferia della mia città</label>
-                <input type="radio" name="risposta-7" id="periferia" value="periferia">
-                <label for="vacanza">In un luogo di vacanza</label>
-                <input type="radio" name="risposta-7" id="vacanza" value="vacanza">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="radio" name="risposta-7" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-6" class="primary-color text-bold"><span class="nr-domanda">6.</span> L'ultima volta che ha acquistato un prodotto non originale, da quale venditore l'ha acquistato?</p>
+                    <input type="radio" name="risposta-6" id="strada" value="strada">
+                    <label for="strada">Da un venditore di strada</label>
+                    <input type="radio" name="risposta-6" id="bancarella" value="bancarella">
+                    <label for="bancarella">Da una bancarella</label>
+                    <input type="radio" name="risposta-6" id="internet" value="internet">
+                    <label for="internet">Su internet</label>
+                    <input type="radio" name="risposta-6" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-8" class="domanda primary-color text-bold">L'ultima volta che ha acquistato un prodotto non originale, con chi era?</p>
-                <label for="solo">Da solo/a</label>
-                <input type="radio" name="risposta-8" id="solo" value="solo">
-                <label for="altri-no">Con altre persone ma loro non hanno acquistato un prodotto non originale</label>
-                <input type="radio" name="risposta-8" id="altri-no" value="altri-no">
-                <label for="altri-si">Con altre persone e anche loro hanno acquistato un prodotto non originale</label>
-                <input type="radio" name="risposta-8" id="altri-si" value="altri-si">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="radio" name="risposta-8" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-7" class="primary-color text-bold"><span class="nr-domanda">7.</span> L'ultima volta che ha acquistato un prodotto non originale, in che luogo l'ha acquistato?</p>
+                    <input type="radio" name="risposta-7" id="centro" value="centro">
+                    <label for="centro">In centro nella mia città</label>
+                    <input type="radio" name="risposta-7" id="periferia" value="periferia">
+                    <label for="periferia">Nella periferia della mia città</label>
+                    <input type="radio" name="risposta-7" id="vacanza" value="vacanza">
+                    <label for="vacanza">In un luogo di vacanza</label>
+                    <input type="radio" name="risposta-7" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-9" class="domanda primary-color text-bold">Ripensando all'ultima volta che ha acquistato un prodotto non originale, lo definirebbe un acquisto:</p>
-                <label for="impulso">D'impulso, ho acquistato senza pensare</label>
-                <input type="radio" name="risposta-9" id="impulso" value="impulso">
-                <label for="pianificato">Pianificato, sono andato/a cercare quello specifico prodotto</label>
-                <input type="radio" name="risposta-9" id="pianificato" value="pianificato">
-                <label for="ripiego">Un ripiego, ho acquistato quel prodotto perchè non ho potuto acquistare l'originale</label>
-                <input type="radio" name="risposta-9" id="ripiego" value="ripiego">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="radio" name="risposta-9" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-8" class="primary-color text-bold"><span class="nr-domanda">8.</span> L'ultima volta che ha acquistato un prodotto non originale, con chi era?</p>
+                    <input type="radio" name="risposta-8" id="solo" value="solo">
+                    <label for="solo">Da solo/a</label>
+                    <input type="radio" name="risposta-8" id="altri-no" value="altri-no">
+                    <label for="altri-no">Con altre persone ma loro non hanno acquistato un prodotto non originale</label>
+                    <input type="radio" name="risposta-8" id="altri-si" value="altri-si">
+                    <label for="altri-si">Con altre persone e anche loro hanno acquistato un prodotto non originale</label>
+                    <input type="radio" name="risposta-8" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-10" class="domanda primary-color text-bold">Ripensando all'ultima volta che ha acquistato un prodotto non originale, quali sono state le sue motivazioni?</p>
-                <label for="risparmio">Per risparmiare</label>
-                <input type="checkbox" name="risposta-10" id="risparmio" value="risparmio">
-                <label for="moda">Per essere alla moda</label>
-                <input type="checkbox" name="risposta-10" id="moda" value="moda">
-                <label for="qualita">Perchè la qualità è la stessa dell'originale</label>
-                <input type="checkbox" name="risposta-10" id="qualita" value="qualita">
-                <label for="perdita">Perchè non perdo molto e si rovina</label>
-                <input type="checkbox" name="risposta-10" id="perdita" value="perdita">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="checkbox" name="risposta-10" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-9" class="primary-color text-bold"><span class="nr-domanda">9.</span> Ripensando all'ultima volta che ha acquistato un prodotto non originale, lo definirebbe un acquisto:</p>
+                    <input type="radio" name="risposta-9" id="impulso" value="impulso">
+                    <label for="impulso">D'impulso, ho acquistato senza pensare</label>
+                    <input type="radio" name="risposta-9" id="pianificato" value="pianificato">
+                    <label for="pianificato">Pianificato, sono andato/a cercare quello specifico prodotto</label>
+                    <input type="radio" name="risposta-9" id="ripiego" value="ripiego">
+                    <label for="ripiego">Un ripiego, ho acquistato quel prodotto perchè non ho potuto acquistare l'originale</label>
+                    <input type="radio" name="risposta-9" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-11" class="domanda primary-color text-bold">Dopo l'ultima volta che ha acquistato un prodotto non originale, che sentimenti ha provato?</p>
-                <label for="entusiasmo">Entusiasmo per il nuovo prodotto</label>
-                <input type="checkbox" name="risposta-11" id="entusiasmo" value="entusiasmo">
-                <label for="soddisfazione">Soddisfazione per aver risparmiato</label>
-                <input type="checkbox" name="risposta-11" id="soddisfazione" value="soddisfazione">
-                <label for="preoccupazione">Preoccupazione per eventuali controlli legali</label>
-                <input type="checkbox" name="risposta-11" id="preoccupazione" value="preoccupazione">
-                <label for="delusione">Delusione per non aver potuto acquistare l'originale</label>
-                <input type="checkbox" name="risposta-11" id="delusione" value="delusione">
-                <label for="imbarazzo">Imbarazzo per aver contravvenuto alle regole</label>
-                <input type="checkbox" name="risposta-11" id="imbarazzo" value="imbarazzo">
-                <label for="altro">Altro / non applicabile</label>
-                <input type="checkbox" name="risposta-11" id="altro" value="altro">
+                <div class="domanda">
+                    <p id="domanda-10" class="primary-color text-bold"><span class="nr-domanda">10.</span> Ripensando all'ultima volta che ha acquistato un prodotto non originale, quali sono state le sue motivazioni?</p>
+                    <input type="checkbox" name="risposta-10" id="risparmio" value="risparmio">
+                    <label for="risparmio">Per risparmiare</label>
+                    <input type="checkbox" name="risposta-10" id="moda" value="moda">
+                    <label for="moda">Per essere alla moda</label>
+                    <input type="checkbox" name="risposta-10" id="qualita" value="qualita">
+                    <label for="qualita">Perchè la qualità è la stessa dell'originale</label>
+                    <input type="checkbox" name="risposta-10" id="perdita" value="perdita">
+                    <label for="perdita">Perchè non perdo molto se si rovina</label>
+                    <input type="checkbox" name="risposta-10" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-12" class="domanda primary-color text-bold">Indichi quanto è d'accordo con la seguente affermazione: I prodotti originali sono ingiustificatamente cari</p>
-                <label for="niente">Per niente d'accordo</label>
-                <input type="radio" name="risposta-12" id="niente" value="1">
-                <label for="parzialmente">Parzialmente d'accordo</label>
-                <input type="radio" name="risposta-12" id="parzialmente" value="2">
-                <label for="daccordo">D'accordo</label>
-                <input type="radio" name="risposta-12" id="daccordo" value="daccordo">
-                <label for="totalmente">Totalmente d'accordo</label>
-                <input type="radio" name="risposta-12" id="totalmente" value="3">
+                <div class="domanda">
+                    <p id="domanda-11" class="primary-color text-bold"><span class="nr-domanda">11.</span> Dopo l'ultima volta che ha acquistato un prodotto non originale, che sentimenti ha provato?</p>
+                    <input type="checkbox" name="risposta-11" id="entusiasmo" value="entusiasmo">
+                    <label for="entusiasmo">Entusiasmo per il nuovo prodotto</label>
+                    <input type="checkbox" name="risposta-11" id="soddisfazione" value="soddisfazione">
+                    <label for="soddisfazione">Soddisfazione per aver risparmiato</label>
+                    <input type="checkbox" name="risposta-11" id="preoccupazione" value="preoccupazione">
+                    <label for="preoccupazione">Preoccupazione per eventuali controlli legali</label>
+                    <input type="checkbox" name="risposta-11" id="delusione" value="delusione">
+                    <label for="delusione">Delusione per non aver potuto acquistare l'originale</label>
+                    <input type="checkbox" name="risposta-11" id="imbarazzo" value="imbarazzo">
+                    <label for="imbarazzo">Imbarazzo per aver contravvenuto alle regole</label>
+                    <input type="checkbox" name="risposta-11" id="altro" value="altro">
+                    <label for="altro">Altro / non applicabile</label>
+                </div>
 
-                <p id="domanda-13" class="domanda primary-color text-bold">Indichi quanto è d'accordo con la seguente affermazione: I controlli sui prodotti non originali sono inefficaci</p>
-                <label for="niente">Per niente d'accordo</label>
-                <input type="radio" name="risposta-13" id="niente" value="1">
-                <label for="parzialmente">Parzialmente d'accordo</label>
-                <input type="radio" name="risposta-13" id="parzialmente" value="2">
-                <label for="daccordo">D'accordo</label>
-                <input type="radio" name="risposta-13" id="daccordo" value="daccordo">
-                <label for="totalmente">Totalmente d'accordo</label>
-                <input type="radio" name="risposta-13" id="totalmente" value="3">
-                <button type="submit" class="primary-background secondary-color-light text-bold">INVIA</button>
+                <div class="domanda">
+                    <p id="domanda-12" class="primary-color text-bold"><span class="nr-domanda">12.</span> Indichi quanto è d'accordo con la seguente affermazione: I prodotti originali sono ingiustificatamente cari</p>
+                    <input type="radio" name="risposta-12" id="niente" value="1">
+                    <label for="niente">Per niente d'accordo</label>
+                    <input type="radio" name="risposta-12" id="parzialmente" value="2">
+                    <label for="parzialmente">Parzialmente d'accordo</label>
+                    <input type="radio" name="risposta-12" id="daccordo" value="daccordo">
+                    <label for="daccordo">D'accordo</label>
+                    <input type="radio" name="risposta-12" id="totalmente" value="3">
+                    <label for="totalmente">Totalmente d'accordo</label>
+                </div>
+
+                <div class="domanda">
+                    <p id="domanda-13" class="primary-color text-bold"><span class="nr-domanda">13.</span> Indichi quanto è d'accordo con la seguente affermazione: I controlli sui prodotti non originali sono inefficaci</p>
+                    <input type="radio" name="risposta-13" id="niente" value="1">
+                    <label for="niente">Per niente d'accordo</label>
+                    <input type="radio" name="risposta-13" id="parzialmente" value="2">
+                    <label for="parzialmente">Parzialmente d'accordo</label>
+                    <input type="radio" name="risposta-13" id="daccordo" value="daccordo">
+                    <label for="daccordo">D'accordo</label>
+                    <input type="radio" name="risposta-13" id="totalmente" value="3">
+                    <label for="totalmente">Totalmente d'accordo</label>
+                </div>
+                <div><button type="submit" class="primary-background secondary-color-light text-bold">INVIA</button>
+                </div>
             </form>
         </section>
 

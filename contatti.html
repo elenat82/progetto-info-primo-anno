@@ -50,14 +50,14 @@
     <main>
         <div class="container_form">
             <form action="thankyou-page.html" method="POST" id="contatti">
-                <label for="fname">Nome</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Inserisci il tuo nome"><br>
-                <label for="lname">Cognome</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Inserisci il tuo congnome"><br>
-                <label for="email">E-mail</label><br>
-                <input type="email" id="email" name="email" placeholder="Inserisci la tua email"><br>
-                <label for="messaggio">Messaggio</label><br>
-                <textarea id="subject" name="messaggio" placeholder="Inserisci il tuo messaggio" rows="5"></textarea>
+                <label for="fname">Nome <span>*</span></label><br>
+                <input type="text" id="fname" name="fname" placeholder="Inserisci il tuo nome" required><br>
+                <label for="lname">Cognome <span>*</span></label><br>
+                <input type="text" id="lname" name="lname" placeholder="Inserisci il tuo congnome" required><br>
+                <label for="email">E-mail <span>*</span></label><br>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required><br>
+                <label for="messaggio">Messaggio <span>*</span></label><br>
+                <textarea id="subject" name="messaggio" placeholder="Inserisci il tuo messaggio" rows="5" required></textarea>
                 <button type="submit" class="primary-background secondary-color-light text-bold">INVIA</button>
             </form>
         </div>
