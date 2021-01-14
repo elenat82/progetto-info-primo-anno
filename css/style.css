@@ -65,7 +65,7 @@ q {
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, .domanda {
+h1, h2, h3, .domanda p {
     font-family: "roxborough", serif;
 }
 /* usiamo i rem invece che gli em in modo che le misure siano sempre relative al
@@ -197,6 +197,14 @@ hr {
     margin-bottom: 2rem;
     width: 70%;
 }
+.thank-you-message {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 /* ------ HEADER ------ */
 #topbar {
     width: 100%;
@@ -297,7 +305,59 @@ footer .icons a {
     font-size: 1.7rem;
     padding: 0.5rem;
 }
-
+/* ---------- HOME ---------------- */
+#categorie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#categorie li {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categorie a {
+    text-decoration: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 256px;
+    color: white;
+    background-color: rgba(85,83,106,0.85);
+    transition: all linear 0.3s;
+}
+#categorie a:hover {
+    background-color: #55536a;
+    transition: all linear 0.3s;
+}
+#categorie .impressionismo {
+    background-image: url("../img/medie/Claude_Monet_Regate_ad_Argenteuil-media.jpg");
+}
+#categorie .cubismo {
+    background-image: url("../img/medie/Pablo_Picasso_Guernica-media.jpg");
+}
+#categorie .puntinismo {
+    background-image: url("../img/medie/Georges_Seurat_I_bagnanti_ad_Asnieres-media.jpg");
+}
+#categorie .futurismo {
+    background-image: url("../img/medie/Joseph_Stella_Battle_of_Lights-media.jpg");
+}
+#categorie .iperrealismo {
+    background-image: url("../img/medie/Mauro_David_Fruttiera_di_cristallo_con_meloni.jpg");
+}
+#categorie .pop-art {
+    background-image: url("../img/medie/Andy_Warhol_Marilyn.jpg");
+}
+#categorie .surrealismo {
+    background-image: url("../img/medie/Max_Ernst_Il_bacio.jpg");
+}
+#categorie .naif {
+    background-image: url("../img/medie/Louis_Vivin_Jungle.jpg");
+}
 /* ------- PAGINA CARRELLO --------- */
 /* https://www.w3.org/Style/Examples/007/color-bullets.en.html */
 #checkout-progress {
@@ -529,6 +589,28 @@ details .wishlist a {
 .info-ricerca {
     margin-top: 1rem;
     line-height: 1.5rem;
+}
+.domanda {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: dotted 0.5px  rgba(73,73,94,0.5);
+}
+.domanda p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.domanda label {
+    margin-right: 2.3rem;
+    line-height: 2.3rem;
+}
+.domanda label:hover {
+    color: #49b6a8;
+    cursor: pointer;
+}
+.nr-domanda {
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 /* ------------- PAGINA CONTATTI --------------------- */
 #contatti button:hover,
