@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tali e Quadri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,19 +15,20 @@
     <header>
         <div id="topbar">
             <form action="#" method="get" id="cerca" role="search">
-                <input type="search" name="keyword" maxlength="50"
-                    aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i class="fas fa-search secondary-color-light"></i></button>
+                <label for="keyword">Cerca</label>
+                <input type="search" name="keyword" id="keyword" maxlength="50"
+                    aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca..."
+                    placeholder="Cerca..."> <button class="primary-background text-bold"><span class="fas fa-search secondary-color-light" aria-hidden="true"></span></button>
             </form>
             <div id="logo" class="text-center">
                 <a href="index.html" title="Home">
                     <img src="img/logo.svg" alt="Logo" width="100">
-                    <h1 class="primary-color text-right">Tali e Quadri</h1>
+                    <h1 class="primary-color text-right text-bold">Tali e Quadri</h1>
                 </a>
             </div>
             <ul id="user-menu">
-                <li><a href="account.html" title="Vai alla pagina Account"><i class="far fa-user primary-color"></i> Account</a></li>
-                <li><a href="carrello.html" title="Vai alla pagina Carrello"><i class="fas fa-shopping-cart primary-color"></i> Carrello</a></li>
+                <li><a href="account.html" title="Vai alla pagina Account"><span class="far fa-user primary-color" aria-hidden="true"></span> Account</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello"><span class="fas fa-shopping-cart primary-color" aria-hidden="true"></span> Carrello</a></li>
             </ul>
         </div>
         <nav>
@@ -41,6 +42,7 @@
         </nav>
     </header>
     <main>
+        <h2>Benvenuto, Mario!</h2>
         <div id="pagina-account">
             <section>
                 <h3>Informazioni personali</h3>
@@ -62,15 +64,15 @@
                         <input type="date" name="nascita" id="nascita" value="2000-01-01"
                             required>
                     </div>
-                    <div>
-                        <span>Sesso *</span>
+                    <fieldset>
+                        <legend>Sesso *</legend>
                         <input type="radio" id="maschio" name="sesso" value="maschio" required checked>
                         <label for="maschio">Maschio</label>
                         <input type="radio" id="femmina" name="sesso" value="femmina" required>
                         <label for="femmina">Femmina</label>
                         <input type="radio" id="altro" name="sesso" value="altro" required>
                         <label for="altro">Altro</label>
-                    </div>
+                    </fieldset>
                     <hr>
                     <div>
                         <p class="hint">Se desideri modificare la tua password compila i campi sottostanti:</p>
@@ -106,18 +108,18 @@
                             <td class="n-ordine text-center">JHAMHWDZI</td>
                             <td class="data-ordine text-center">26/07/2018</td>
                             <td class="total-price primary-color text-center text-bold">3700,00</td>
-                            <td class="metodo-pagamento text-center"><span class="paypal"><i class="fab fa-paypal primary-color"></i> PayPal</span></td>
+                            <td class="metodo-pagamento text-center"><span class="paypal"><span class="fab fa-paypal primary-color" aria-hidden="true"></span> PayPal</span></td>
                             <td class="stato-ordine text-center"><span class="evaso">Evaso</span></td>
-                            <td class="text-center"><a href="fattura-JHAMHWDZI.pdf" title="Visualizza la fattura"><i class="fas fa-file-download"></i></a></td>
+                            <td class="text-center"><a href="fattura-JHAMHWDZI.pdf" title="Visualizza la fattura"><span class="fas fa-file-download" aria-hidden="true"></span></a></td>
                             <td class="text-center"><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
                         </tr>
                         <tr>
                             <td class="n-ordine text-center">UDKQVHHQR</td>
                             <td class="data-ordine text-center">13/11/2020</td>
                             <td class="total-price primary-color text-center text-bold">2400,00</td>
-                            <td class="metodo-pagamento text-center"><span class="credit-card"><i class="far fa-credit-card primary-color"></i> Carta</span></td>
+                            <td class="metodo-pagamento text-center"><span class="credit-card"><span class="far fa-credit-card primary-color" aria-hidden="true"></span> Carta</span></td>
                             <td class="stato-ordine text-center"><span class="in-lavorazione">In lavorazione</span></td>
-                            <td class="text-center"><a href="fattura-UDKQVHHQR.pdf" title="Visualizza la fattura"><i class="fas fa-file-download"></i></a></td>
+                            <td class="text-center"><a href="fattura-UDKQVHHQR.pdf" title="Visualizza la fattura"><span class="fas fa-file-download" aria-hidden="true"></span></a></td>
                             <td class="text-center"><a href="dettaglio.html" title="Visualizza il dettaglio">+ info</a></td>
                         </tr>
                     </tbody>

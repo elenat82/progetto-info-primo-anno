@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tali e Quadri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,22 +15,22 @@
     <header>
         <div id="topbar">
             <form action="#" method="get" id="cerca" role="search">
-                <input type="search" name="keyword" maxlength="50"
+                <label for="keyword">Cerca</label>
+                <input type="search" name="keyword" id="keyword" maxlength="50"
                     aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i
-                        class="fas fa-search secondary-color-light"></i></button>
+                    placeholder="Cerca..."> <button class="primary-background text-bold"><span
+                        class="fas fa-search secondary-color-light" aria-hidden="true"></span></button>
             </form>
             <div id="logo" class="text-center">
                 <a href="index.html" title="Home">
                     <img src="img/logo.svg" alt="Logo" width="100">
-                    <h1 class="primary-color text-right">Tali e Quadri</h1>
+                    <h1 class="primary-color text-right text-bold">Tali e Quadri</h1>
                 </a>
             </div>
             <ul id="user-menu">
-                <li><a href="account.html" title="Vai alla pagina Account"><i class="far fa-user primary-color"></i>
+                <li><a href="account.html" title="Vai alla pagina Account"><span class="far fa-user primary-color" aria-hidden="true"></span>
                         Account</a></li>
-                <li><a href="carrello.html" title="Vai alla pagina Carrello"><i
-                            class="fas fa-shopping-cart primary-color"></i> Carrello</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello"><span class="fas fa-shopping-cart primary-color" aria-hidden="true"></span> Carrello</a></li>
             </ul>
         </div>
         <nav>
@@ -57,7 +57,7 @@
                 <label for="email">E-mail <span>*</span></label><br>
                 <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required><br>
                 <label for="messaggio">Messaggio <span>*</span></label><br>
-                <textarea id="subject" name="messaggio" placeholder="Inserisci il tuo messaggio" rows="5" required></textarea>
+                <textarea id="messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio" rows="5" required></textarea>
                 <button type="submit" class="primary-background secondary-color-light text-bold">INVIA</button>
             </form>
         </div>

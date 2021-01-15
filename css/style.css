@@ -65,7 +65,7 @@ q {
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, .domanda p {
+h1, h2, h3, .domanda legend {
     font-family: "roxborough", serif;
 }
 /* usiamo i rem invece che gli em in modo che le misure siano sempre relative al
@@ -156,6 +156,8 @@ textarea {
     border-radius: 4px;
 }
 .hint {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-style: italic;
 }
 /* -------------- BOTTONI ------------ */
@@ -224,14 +226,14 @@ hr {
     flex-basis: 33.33%;
 }
 #cerca input {
-    /*  i 50px sono la larghezza del bottone*/
-    width: calc(100% - 50px);
+    /*  i 100px sono la larghezza del bottone + la label*/
+    width: calc(100% - 100px);
 }
 #cerca button:hover {
     background-color: #cfece8;
     transition: all linear 0.3s;
 }
-#cerca button:hover i {
+#cerca button:hover span {
     color: #55536a;
     transition: all linear 0.3s;
 }
@@ -250,7 +252,7 @@ hr {
     transition: all linear 0.3s;
 }
 #user-menu li:hover a,
-#user-menu li:hover i {
+#user-menu li:hover span {
     background-color: #55536a;
     color: #cfece8;
     transition: all linear 0.3s;
@@ -528,7 +530,7 @@ details .wishlist a {
 }
 #pagina-prodotto .left .img-big button {
     font-size: 2rem;
-    color: white
+    color: white;
 }
 #pagina-prodotto .left:hover .img-big {
     opacity: 1;
@@ -545,6 +547,11 @@ details .wishlist a {
 /*  con il selettore > si selezionano solo gli elementi direttamente discendenti */
 #pagina-prodotto .dettagli > * {
     padding: 2rem;
+}
+/* -------- HO DOVUTO FARE QUESTO PERCHE' IL VALIDATORE DELL'ACCESSIBILITA' NON MI FACEVA METTERE L'H3 PRIMA DELL'H2*/
+#pagina-prodotto .dettagli .autore-titolo {
+    display: flex;
+    flex-direction: column-reverse;
 }
 #pagina-prodotto .dettagli .autore-titolo a {
     text-decoration: none;
@@ -595,9 +602,9 @@ details .wishlist a {
     padding-bottom: 1rem;
     border-top: dotted 0.5px  rgba(73,73,94,0.5);
 }
-.domanda p {
+.domanda legend {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
 }
 .domanda label {
     margin-right: 2.3rem;
@@ -611,6 +618,10 @@ details .wishlist a {
     padding: 0 0.5rem;
     font-size: 1.5rem;
     font-style: italic;
+}
+.video-container,
+.form-container {
+    margin-top: 2rem;
 }
 /* ------------- PAGINA CONTATTI --------------------- */
 #contatti button:hover,

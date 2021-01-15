@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tali e Quadri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,19 +15,20 @@
     <header>
         <div id="topbar">
             <form action="#" method="get" id="cerca" role="search">
-                <input type="search" name="keyword" maxlength="50"
+                <label for="keyword">Cerca</label>
+                <input type="search" name="keyword" id="keyword" maxlength="50"
                     aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i class="fas fa-search secondary-color-light"></i></button>
+                    placeholder="Cerca..."> <button class="primary-background text-bold"><span class="fas fa-search secondary-color-light" aria-hidden="true"></span></button>
             </form>
             <div id="logo" class="text-center">
                 <a href="index.html" title="Home">
                     <img src="img/logo.svg" alt="Logo" width="100">
-                    <h1 class="primary-color text-right">Tali e Quadri</h1>
+                    <h1 class="primary-color text-right text-bold">Tali e Quadri</h1>
                 </a>
             </div>
             <ul id="user-menu">
-                <li><a href="account.html" title="Vai alla pagina Account"><i class="far fa-user primary-color"></i> Account</a></li>
-                <li><a href="carrello.html" title="Vai alla pagina Carrello"><i class="fas fa-shopping-cart primary-color"></i> Carrello</a></li>
+                <li><a href="account.html" title="Vai alla pagina Account"><span class="far fa-user primary-color" aria-hidden="true"></span> Account</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello"><span class="fas fa-shopping-cart primary-color" aria-hidden="true"></span> Carrello</a></li>
             </ul>
         </div>
         <nav>
@@ -69,8 +70,8 @@
                         <p class="originale scontato"><span>980,00</span> <span class="sconto">- 20%</span></p>
                         <p class="finale">784,00</p>
                     </td>
-                    <td><input type="number" name="quantita-CM05" id="quantita-CM05" value="1" min="1" max="5"><a
-                            href="#" title="Rimuovi prodotto"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><label for="quantita-CM05">N. </label><input type="number" name="quantita-CM05" id="quantita-CM05" value="1" min="1" max="5"><a
+                            href="#" title="Rimuovi prodotto"><span class="fas fa-trash-alt" aria-hidden="true"></span></a></td>
                     <td class="total-price primary-color text-bold">784,00</td>
                 </tr>
                 <tr id="prodotto-PP01">
@@ -84,8 +85,8 @@
                         <p class="originale scontato"><span>1240,00</span> <span class="sconto">- 20%</span></p>
                         <p class="finale">992,00</p>
                     </td>
-                    <td><input type="number" name="quantita-PP01" id="quantita-PP01" value="1" min="1" max="5"><a
-                            href="#" title="Rimuovi prodotto"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><label for="quantita-PP01">N. </label><input type="number" name="quantita-PP01" id="quantita-PP01" value="1" min="1" max="5"><a
+                            href="#" title="Rimuovi prodotto"><span class="fas fa-trash-alt" aria-hidden="true"></span></a></td>
                     <td class="total-price primary-color text-bold">992,00</td>
                 </tr>
                 <tr id="prodotto-PR04">
@@ -99,8 +100,8 @@
                         <p class="originale"><span>850,00</span></p>
                         <p class="finale"></p>
                     </td>
-                    <td><input type="number" name="quantita-PR04" id="quantita-PR04" value="1" min="1" max="5"><a
-                            href="#" title="Rimuovi prodotto"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><label for="quantita-PR04">N. </label><input type="number" name="quantita-PR04" id="quantita-PR04" value="1" min="1" max="5"><a
+                            href="#" title="Rimuovi prodotto"><span class="fas fa-trash-alt" aria-hidden="true"></span></a></td>
                     <td  class="total-price primary-color text-bold">850,00</td>
                 </tr>
                 <tr id="prodotto-VK06">
@@ -114,8 +115,8 @@
                         <p class="originale scontato"><span>930,00</span> <span class="sconto">- 20%</span></p>
                         <p class="finale">744,00</p>
                     </td>
-                    <td><input type="number" name="quantita-VK06" id="quantita-VK06" value="1" min="1" max="5"><a
-                            href="#" title="Rimuovi prodotto"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><label for="quantita-VK06">N. </label><input type="number" name="quantita-VK06" id="quantita-VK06" value="1" min="1" max="5"><a
+                            href="#" title="Rimuovi prodotto"><span class="fas fa-trash-alt" aria-hidden="true"></span></a></td>
                     <td class="total-price primary-color text-bold">744,00</td>
                 </tr>
                 <tr id="prodotto-VV09">
@@ -129,8 +130,8 @@
                         <p class="originale">1460,00</p>
                         <p class="finale"></p>
                     </td>
-                    <td><input type="number" name="quantita-VV09" id="quantita-VV09" value="1" min="1" max="5"><a
-                            href="#" title="Rimuovi prodotto"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><label for="quantita-VV09">N. </label><input type="number" name="quantita-VV09" id="quantita-VV09" value="1" min="1" max="5"><a
+                            href="#" title="Rimuovi prodotto"><span class="fas fa-trash-alt" aria-hidden="true"></span></a></td>
                     <td class="total-price primary-color text-bold">1460,00</td>
                 </tr>
             </tbody>
@@ -148,13 +149,13 @@
                 <tr>
                     <td colspan="3"></td>
                     <td class="text-right">Totale</td>
-                    <td class="text-right total-price primary-color secondary-background-light text-bold"><strong>4910,00</strong> <i class="fas fa-euro-sign"></i></td>
+                    <td class="text-right total-price primary-color secondary-background-light text-bold"><strong>4910,00</strong> <span class="fas fa-euro-sign" aria-hidden="true"></span></td>
                 </tr>
             </tfoot>
         </table>
         <ul id="checkout-navigation">
-            <li><a href="index.html" title="Torna alla home"><i class="fas fa-arrow-left"></i> Continua lo shopping</a></li>
-            <li><a href="indirizzi.html" title="Vai alla pagina degli indirizzi">Indirizzi <i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="index.html" title="Torna alla home"><span class="fas fa-arrow-left" aria-hidden="true"></span> Continua lo shopping</a></li>
+            <li><a href="indirizzi.html" title="Vai alla pagina degli indirizzi">Indirizzi <span class="fas fa-arrow-right" aria-hidden="true"></span></a></li>
         </ul>
     </main>
 

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tali e Quadri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6d3b88364d.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,19 +15,20 @@
     <header>
         <div id="topbar">
             <form action="#" method="get" id="cerca" role="search">
-                <input type="search" name="keyword" maxlength="50"
+                <label for="keyword">Cerca</label>
+                <input type="search" name="keyword" id="keyword" maxlength="50"
                     aria-label="Cerca per artista, titolo o parola chiave" aria-placeholder="Cerca"
-                    placeholder="Cerca..." autocomplete="off" autocorrect="off"> <button class="primary-background text-bold"><i class="fas fa-search secondary-color-light"></i></button>
+                    placeholder="Cerca..."> <button class="primary-background text-bold"><span class="fas fa-search secondary-color-light" aria-hidden="true"></span></button>
             </form>
             <div id="logo" class="text-center">
                 <a href="index.html" title="Home">
                     <img src="img/logo.svg" alt="Logo" width="100">
-                    <h1 class="primary-color text-right">Tali e Quadri</h1>
+                    <h1 class="primary-color text-right text-bold">Tali e Quadri</h1>
                 </a>
             </div>
             <ul id="user-menu">
-                <li><a href="account.html" title="Vai alla pagina Account"><i class="far fa-user primary-color"></i> Account</a></li>
-                <li><a href="carrello.html" title="Vai alla pagina Carrello"><i class="fas fa-shopping-cart primary-color"></i> Carrello</a></li>
+                <li><a href="account.html" title="Vai alla pagina Account"><span class="far fa-user primary-color" aria-hidden="true"></span> Account</a></li>
+                <li><a href="carrello.html" title="Vai alla pagina Carrello"><span class="fas fa-shopping-cart primary-color" aria-hidden="true"></span> Carrello</a></li>
             </ul>
         </div>
         <nav>
@@ -50,17 +51,17 @@
             <div class="half left">
                 <img src="img/Claude_Monet_Ninfee.jpg" alt="Claude Monet - Ninfee">
                 <div class="img-big">
-                    <button type="button" title="Guarda immagine grande" class="text-bold"><i class="fas fa-search-plus"></i></button>
+                    <button type="button" title="Guarda immagine grande" class="text-bold"><span class="fas fa-search-plus" aria-hidden="true"></span></button>
                 </div>
             </div>
             <div class="half right secondary-background-light">
                 <div class="dettagli">
                     <div class="autore-titolo">
-                        <h3><a href="artista.html" title="Vai alla pagina dell'artista Claudio Monetti">Claudio Monetti</a></h3>
                         <h2 class="text-bold"><span>Claude Monet</span> - <span>Ninfee</span></h2>
+                        <h3><a href="artista.html" title="Vai alla pagina dell'artista Claudio Monetti">Claudio Monetti</a></h3>
                     </div>
                     <p class="sku"><span>SKU: </span><span>CM08</span></p>
-                    <p class="rating text-right">64 Reviews <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></p>
+                    <p class="rating text-right">64 Reviews <span class="fas fa-star" aria-hidden="true"></span> <span class="fas fa-star" aria-hidden="true"></span> <span class="fas fa-star" aria-hidden="true"></span> <span class="fas fa-star" aria-hidden="true"></span> <span class="far fa-star" aria-hidden="true"></span></p>
                     <div class="dimensioni">
                         <label for="dimensioni">Dimensioni:</label>
                         <select name="dimensioni" id="dimensioni">
@@ -78,15 +79,15 @@
                         </div>
                     </div>
                     <div class="bottoni">
-                        <p id="wishlist" class="text-bold text-center"><a href="#" title="Aggiungi alla wishlist"><i class="fas fa-heart"></i> Aggiungi alla wishlist</a></p>
-                        <p id="cta" class="text-bold text-center"><a href="#" title="Aggiungi al carrello" class="primary-background"><i class="fas fa-shopping-cart"></i> ACQUISTA ORA</a></p>
+                        <p id="wishlist" class="text-bold text-center"><a href="#" title="Aggiungi alla wishlist"><span class="fas fa-heart" aria-hidden="true"></span> Aggiungi alla wishlist</a></p> 
+                        <p id="cta" class="text-bold text-center"><a href="#" title="Aggiungi al carrello" class="primary-background"><span class="fas fa-shopping-cart" aria-hidden="true"></span> ACQUISTA ORA</a></p>
                     </div>
                     <div class="share">
                         <ul class="icons">
                             <li>Condividi!</li>
-                            <li><a href="https://it-it.facebook.com/" title="Vai alla pagina Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.instagram.com/" title="Vai alla pagina Instagram" target="_blank"><i class="fab fa-instagram-square" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.pinterest.it/" title="Vai alla pagina Pinterest" target="_blank"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="https://it-it.facebook.com/" title="Vai alla pagina Facebook" target="_blank"><span class="fab fa-facebook" aria-hidden="true"></span></a></li>
+                            <li><a href="https://www.instagram.com/" title="Vai alla pagina Instagram" target="_blank"><span class="fab fa-instagram-square" aria-hidden="true"></span></a></li>
+                            <li><a href="https://www.pinterest.it/" title="Vai alla pagina Pinterest" target="_blank"><span class="fab fa-pinterest" aria-hidden="true"></span></a></li>
                         </ul>
                     </div>
                 </div>
