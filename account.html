@@ -35,9 +35,10 @@
             <ul>
                 <li><a href="index.html" title="Vai alla pagina Home" accesskey="h" class="primary-color text-bold">HOME</a></li>
                 <li><a href="#" title="Vai alla pagina Chi siamo" accesskey="s" class="primary-color text-bold">CHI SIAMO</a></li>
-                <li><a href="#" title="Vai alla pagina Stili Pittorici" accesskey="a" class="primary-color text-bold">STILI PITTORICI</a></li>
+                <li><a href="#" title="Vai alla pagina Stili Pittorici" accesskey="p" class="primary-color text-bold">STILI PITTORICI</a></li>
                 <li><a href="#" title="Vai alla pagina Artisti" accesskey="a" class="primary-color text-bold">ARTISTI</a></li>
                 <li><a href="contatti.html" title="Vai alla pagina Contatti" accesskey="c" class="primary-color text-bold">CONTATTI</a></li>
+                <li><a href="lavora-con-noi.html" title="Vai alla pagina Lavora con noi" accesskey="l" class="primary-color text-bold">LAVORA CON NOI</a></li>
                 <li><a href="ricerca.html" title="Vai alla pagina Ricerca" accesskey="r" class="secondary-background-dark text-bold">Partecipa alla ricerca!</a></li>
             </ul>
         </nav>
@@ -51,26 +52,25 @@
         <div id="pagina-account">
             <section>
                 <h3>Informazioni personali</h3>
-                <form action="#" method="post" id="info">
+                <form action="thankyou-page.html" method="post" id="info">
                     <div>
-                        <label for="email">E-mail *</label>
+                        <label for="email">E-mail <span>*</span></label>
                         <input type="email" name="email" id="email" value="mario@libero.it"
-                            placeholder="Inserisci il tuo indirizzo e-mail" required>
+                            placeholder="Inserisci il tuo indirizzo e-mail" required maxlength="50">
                     </div>
                     <div>
-                        <label for="nome">Nome *</label>
-                        <input type="text" name="nome" id="nome" value="Mario" placeholder="Inserisci il tuo nome" required>
-                        <label for="cognome">Cognome</label>
-                        <input type="text" name="cognome" id="cognome" value="Rossi" placeholder="Inserisci il tuo cognome"
-                            required>
+                        <label for="nome">Nome <span>*</span></label>
+                        <input type="text" name="nome" id="nome" value="Mario" placeholder="Inserisci il tuo nome" maxlength="50" required>
+                        <label for="cognome">Cognome <span>*</span></label>
+                        <input type="text" name="cognome" id="cognome" value="Rossi" placeholder="Inserisci il tuo cognome" maxlength="50" required>
                     </div>
                     <div>
-                        <label for="nascita">Data di nascita *</label>
+                        <label for="nascita">Data di nascita <span>*</span></label>
                         <input type="date" name="nascita" id="nascita" value="2000-01-01"
                             required>
                     </div>
                     <fieldset>
-                        <legend>Sesso *</legend>
+                        <legend>Sesso <span>*</span></legend>
                         <input type="radio" id="maschio" name="sesso" value="maschio" required checked>
                         <label for="maschio">Maschio</label>
                         <input type="radio" id="femmina" name="sesso" value="femmina" required>
@@ -83,10 +83,10 @@
                         <p class="hint">Se desideri modificare la tua password compila i campi sottostanti:</p>
                         <label for="oldpassword">Password attuale</label>
                         <input type="password" name="oldpassword" id="oldpassword"
-                            placeholder="Inserisci la tua password corrente">
+                            placeholder="Inserisci la tua password corrente" maxlength="50">
                         <label for="newpassword">Nuova password</label>
                         <input type="password" name="newpassword" id="newpassword"
-                            placeholder="Inserisci la tua nuova password">
+                            placeholder="Inserisci la tua nuova password" maxlength="50">
                     </div>
                     <div class="form-buttons">
                         <button type="reset" class="text-bold">Annulla Modifiche</button>
@@ -174,7 +174,20 @@
             </section>
         </div>
     </main>
-
+    <footer>
+        <p class="text-center">
+            <small>Copyright 2021: Daniele Zamboni & Elena Trudini
+                <br>Progetto creato in gruppo collaborativo. <br>
+                Tutti i diritti sono riservati agli sviluppatori.
+            </small>
+        </p>
+        <img src="icone/unitoCampusnet.svg" alt="Icona Unito">
+        <ul class="icons">
+            <li><a href="https://it-it.facebook.com/" title="Vai alla pagina Facebook" target="_blank"><span class="fab fa-facebook" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.instagram.com/" title="Vai alla pagina Instagram" target="_blank"><span class="fab fa-instagram-square" aria-hidden="true"></span></a></li>
+            <li><a href="https://www.pinterest.it/" title="Vai alla pagina Pinterest" target="_blank"><span class="fab fa-pinterest" aria-hidden="true"></span></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

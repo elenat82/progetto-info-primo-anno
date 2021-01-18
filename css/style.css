@@ -152,7 +152,9 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
-input[type="date"] {
+input[type="url"],
+input[type="date"],
+input[type="file"] {
     width: 100%;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -161,7 +163,8 @@ input[type="date"] {
     border-radius: 4px;
 }
 input[type="number"],
-input[type="date"] {
+input[type="date"],
+input[type="file"] {
     width: 50%;
 }
 textarea {
@@ -172,10 +175,19 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
 .hint {
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-style: italic;
+}
+.prefix {
+    display: flex;
+    align-items: center;
 }
 /* -------------- BOTTONI ------------ */
 button {
@@ -579,9 +591,6 @@ details .wishlist a {
     height: 100%;
     text-decoration: none;
 }
-#impressionismo .descrizione img {
-    height: 150px;
-}
 #impressionismo .fa-long-arrow-alt-right,
 #impressionismo .fa-long-arrow-alt-left {
     margin-right: 1rem;
@@ -653,11 +662,6 @@ details .wishlist a {
 #pagina-prodotto .dettagli .rating .fas.fa-star {
     color: gold;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-#pagina-prodotto .dettagli .dimensioni select {
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: none;
 }
 #pagina-prodotto .dettagli .prices {
     display: flex;
