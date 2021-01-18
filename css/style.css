@@ -540,6 +540,53 @@ details .wishlist a {
     padding-top: 0.5rem;
     text-decoration: none;
 }
+/* ------------ PAGINA IMPRESSIONISMO -------- */
+#impressionismo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#impressionismo li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 100%;
+}
+#impressionismo li:nth-child(even) {
+    background-color: white;
+}
+#impressionismo li:nth-child(odd) {
+    background-color: #e8e8ed;
+}
+#impressionismo .descrizione {
+    width: 100%;
+    height: 300px;
+}
+#impressionismo .mappa-sx .descrizione a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    text-decoration: none;
+}
+#impressionismo .mappa-dx .descrizione a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    text-decoration: none;
+}
+#impressionismo .descrizione img {
+    height: 150px;
+}
+#impressionismo .fa-long-arrow-alt-right,
+#impressionismo .fa-long-arrow-alt-left {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 /* ------------ PAGINA PRODOTTO ---------- */
 #pagina-prodotto {
     display: flex;
