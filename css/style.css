@@ -721,3 +721,14 @@ details .wishlist a {
     transform: scale(1.05);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
+/* ------- CHI SIAMO ---------- */
+.columns-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-column-gap: 50px;
+}
+.disc-img{
+    border-radius: 100px;
+}
